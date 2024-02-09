@@ -1,8 +1,5 @@
-# React + Vite
+# A new website in the making...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is a new react/vite website I'm working on starting feburary 2024 :D
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Color pallete: https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
