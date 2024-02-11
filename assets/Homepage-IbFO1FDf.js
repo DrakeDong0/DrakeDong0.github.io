@@ -1,0 +1,1 @@
+document.getElementById("down-arrow").addEventListener("click",function(){var e=document.getElementById("pfp"),n=window.innerHeight*.01,t=-17*n,o=e.getBoundingClientRect().top+window.pageYOffset+t;window.scrollTo({top:o})});
