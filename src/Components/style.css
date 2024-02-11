@@ -1,2 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&family=Quicksand&display=swap');
 
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    background-color: #1A1A1A;
+    border-radius: 0;
+}
+body::-webkit-scrollbar-thumb{
+    background: #808080;
+    border-radius: 100vw;
+    margin-block: 1em;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: rgba(128, 128, 128, 0.8);
+}
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

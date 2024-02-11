@@ -4,7 +4,7 @@ import React from 'react';
 export default function Header(){
     return(
         <header className="header-container">
-            <div className="name-text">Home</div>
+            <div className="home-text">Home</div>
             <div className="header-items">
                 <p className="header-text">About Me</p>
                 <p className="header-text">Projects</p>
