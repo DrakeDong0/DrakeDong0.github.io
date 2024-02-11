@@ -1,14 +1,24 @@
 import './Header.css'
 import "../../Components/style.css"
+
 import React from 'react';
+import { Link } from 'react-router-dom';
+ 
+
 export default function Header(){
     return(
         <header className="header-container">
-            <div className="home-text">Home</div>
+            <Link to="/">
+                <button className="home-text">Home</button>
+            </Link>
             <div className="header-items">
-                <p className="header-text">About Me</p>
-                <p className="header-text">Projects</p>
-                <p className="header-text">Extras</p>
+                <button className="header-text">About Me</button>
+                <Link to="/Projects">
+                    <button className="header-text">Projects</button>
+                </Link>
+                <Link to="/Extras">
+                    <button className="header-text">Extras</button>
+                </Link>
             </div>
         </header>
     );

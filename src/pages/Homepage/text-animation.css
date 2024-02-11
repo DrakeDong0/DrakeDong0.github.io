@@ -18,10 +18,8 @@
     .title {
       width: 100%;
       overflow-y: hidden;
-      position: relative;
-      display: flex;
       align-items: center;
-      height: 8vh;
+      height: 9vh;
 
       .block {
         width: 0%;
@@ -29,12 +27,10 @@
         background: #ffb510;
         position: absolute;
         animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-        display: flex;
       }
 
-      h1 {
+      h1 { 
         font-family: 'Poppins';
-        color: #fff;
         font-size: clamp(40px, 3vw, 100px);
         -webkit-animation: mainFadeIn 2s forwards;
         -o-animation: mainFadeIn 2s forwards;
@@ -73,6 +69,7 @@
       align-items: center;
       height: 2vw;
       margin-top: -10px;
+      overflow-y: hidden;
 
       .block {
         width: 0%;
@@ -99,8 +96,17 @@
   }
 }
 
-
-
+.linear-color{
+  --bg-size: 400%;
+  --color-one: hsl(15 90% 55%);
+  --color-two: hsl(40 95% 55%);
+  font-size: clamp(3rem, 25vmin, 8rem);
+  background: linear-gradient(90deg, rgba(255, 250, 240, 1) 0%, rgba(255, 165, 0, 1) 50%, rgba(165, 42, 42, 1) 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
 
 
 @keyframes mainBlock {
@@ -176,7 +182,7 @@
   100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: orange;
     border: 0px solid #222;
     bottom: 13px;
 

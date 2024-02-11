@@ -24,6 +24,7 @@
     font-size: clamp(20px, 1vw, 100vw);
 }
 .header-text{
+    color: white;
     animation: fadeIn 3s;
     font-family: 'Quicksand', sans-serif;
 }
