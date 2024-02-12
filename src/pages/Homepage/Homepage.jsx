@@ -1,21 +1,25 @@
 import React, { useEffect, useState } from "react";
+
 import "./Homepage.css";
 import "../../Components/style.css";
 import "../../pages/Homepage/text-animation.css";
+
 import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer"
 import ProfilePicture from '../../assets/pfp.jpg';
 import bg from '../../assets/bg-video.mp4';
 
+import LazyLoad from '../../Components/LazyLoad.jsx';
+
 function HomeContent() {
-  // State to store weather data
   const [weatherData, setWeatherData] = useState({
     temp: '',
     location: '',
     titleText: '',
     weatherIcon: ''
   });
+  
 
-  // Function to fetch weather data and update state
   const fetchWeatherData = () => {
     const apiKey = 'ec85b7a569f34ea38ce211649240902';
     const query = 'Toronto, Ontario';
@@ -36,7 +40,7 @@ function HomeContent() {
         const city = data.location.name;
         const province = data.location.region;
 
-        // Determine title text based on time
+
         let titleText = 'Good Day.';
         if ((dayNight > 18) || (dayNight <= 5)) {
           titleText = 'Good Evening.';
@@ -46,8 +50,7 @@ function HomeContent() {
           titleText = 'Good Afternoon.';
         }
 
-        // Determine weather icon
-        let weatherIcon = 'sunny'; // Default icon
+        let weatherIcon = 'sunny'; 
         if ((dayNight >= 18) || (dayNight <= 5)) {
           weatherIcon = 'nights_stay';
         } else {
@@ -62,7 +65,6 @@ function HomeContent() {
           }
         }
 
-        // Update state with the new weather data
         setWeatherData({
           temp: `${tempC}°C`,
           location: `${city}, ${province}`,
@@ -80,6 +82,27 @@ function HomeContent() {
     const intervalId = setInterval(fetchWeatherData, 600000); 
     import ('../../js/Homepage.js')
     return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    const handleClick = () => {
+      const section = document.querySelector('#about-me');
+        section.scrollIntoView({ behavior: 'smooth' });
+    };
+    const downArrowElement = document.getElementById('down-arrow');
+    downArrowElement.addEventListener('click', handleClick);
+
+    return () => downArrowElement.removeEventListener('click', handleClick);
+  }, []);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const sectionElement = document.querySelector(hash);
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }, []);
 
   return (
@@ -102,6 +125,7 @@ function HomeContent() {
                 <span className="material-symbols-outlined" id="weather_icon">{weatherData.weatherIcon}</span>
                 <div id="location-text">{weatherData.location}</div>
             </div>
+
             <div className="video-container">
                 <video loop autoPlay muted id='bg-video'>
                     <source src={bg} type="video/mp4" />
@@ -112,16 +136,31 @@ function HomeContent() {
                     keyboard_arrow_down
                 </span>
             </button>
-            <div className="profile-container">
+            <div id="about-me"></div>
+            <LazyLoad className="profile-container fadeBot">
                 <img id="pfp" src={ProfilePicture} alt='Drake profile picture'></img>
                 <div className="title-container">
                     <div class="typewriter">
                         <h1>Hi! My name is Drake.</h1>
                     </div>
-                    <div>I'm a first year student at the University of Waterloo.</div>
-                    <div>This website is currently under construction!</div>
+                    <div className="text">I'm a first year Electrical Engineering student at the University of Waterloo.</div>
+                    <div className="options">
+                      <div className="options-container">
+                        <div className="options-item">A little more about myself</div>
+                        <div className="options-item">→</div>
+                      </div>
+                      
+                      <div className="options-container">
+                        <div className="options-item">Stuff I like to do</div>
+                        <div className="options-item">→</div>
+                      </div>
+                      <div className="options-container">
+                        <div className="options-item">Contact</div>
+                        <div className="options-item">→</div>
+                      </div>
+                    </div>
                 </div>
-            </div>
+            </LazyLoad>
         </div>
   );
 }
@@ -130,7 +169,8 @@ export default function Home() {
   return (
     <>
       <HomeContent />
-      <Header />
+      <Header></Header>
+      <Footer />
     </>
   );
 }
