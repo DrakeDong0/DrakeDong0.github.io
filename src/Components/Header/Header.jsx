@@ -32,7 +32,7 @@ export default function Header(){
                     <button className="header-text">Projects</button>
                 </Link>
                 <Link to="/Extras">
-                    <button className="header-text">Extras</button>
+                    <button className="header-text">Work</button>
                 </Link>
             </div>
         </header>

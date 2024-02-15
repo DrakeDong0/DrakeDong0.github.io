@@ -3,13 +3,34 @@ import React, { useEffect, useState } from "react";
 import "./Homepage.css";
 import "../../Components/style.css";
 import "../../pages/Homepage/text-animation.css";
+import "../../js/Homepage.js"
 
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer"
-import ProfilePicture from '../../assets/pfp.jpg';
 import bg from '../../assets/bg-video.mp4';
 
+import uwPic from '../../assets/uw.jpg';
+import ProfilePicture from '../../assets/pfp.jpg';
+import desc_pic from '../../assets/pic1.jpg'
+
 import LazyLoad from '../../Components/LazyLoad.jsx';
+
+import img1 from '../../assets/gallery/img1.jpg'
+import img2 from '../../assets/gallery/img2.jpg'
+import img3 from '../../assets/gallery/img3.jpg'
+import img4 from '../../assets/gallery/img4.jpg'
+import img5 from '../../assets/gallery/img5.jpg'
+import img6 from '../../assets/gallery/img6.jpg'
+import img7 from '../../assets/gallery/img7.jpg'
+import img8 from '../../assets/gallery/img8.jpg'
+import img9 from '../../assets/gallery/img9.jpg'
+import img10 from '../../assets/gallery/img10.jpg'
+import img11 from '../../assets/gallery/img11.jpg'
+import img12 from '../../assets/gallery/img12.jpg'
+import img13 from '../../assets/gallery/img13.jpg'
+import img14 from '../../assets/gallery/img14.jpg'
+import img15 from '../../assets/gallery/img15.jpg'
+import img16 from '../../assets/gallery/img16.jpg'
 
 function HomeContent() {
   const [weatherData, setWeatherData] = useState({
@@ -39,14 +60,15 @@ function HomeContent() {
         const tempC = data.current.temp_c;
         const city = data.location.name;
         const province = data.location.region;
+        console.log(data);
 
 
         let titleText = 'Good Day.';
-        if ((dayNight > 18) || (dayNight <= 5)) {
+        if ((dayNight => 18) || (dayNight <= 5)) {
           titleText = 'Good Evening.';
         } else if ((dayNight >= 6) && (dayNight < 12)) {
           titleText = 'Good Morning.';
-        } else if ((dayNight >= 12) && (dayNight <= 18)) {
+        } else if ((dayNight >= 12) && (dayNight < 18)) {
           titleText = 'Good Afternoon.';
         }
 
@@ -145,19 +167,36 @@ function HomeContent() {
                     </div>
                     <div className="text">I'm a first year Electrical Engineering student at the University of Waterloo.</div>
                     <div className="options">
-                      <div className="options-container">
-                        <div className="options-item">A little more about myself</div>
-                        <div className="options-item">→</div>
-                      </div>
-                      
-                      <div className="options-container">
-                        <div className="options-item">Stuff I like to do</div>
-                        <div className="options-item">→</div>
-                      </div>
-                      <div className="options-container">
-                        <div className="options-item">Contact</div>
-                        <div className="options-item">→</div>
-                      </div>
+                      <button onClick={() => {
+                        const element = document.getElementById('about-container');
+                        const topPosition = element.getBoundingClientRect().top;
+                        window.scrollBy({ 
+                          top: topPosition - 105, 
+                          behavior: 'smooth' 
+                        });
+                        }} className="options-container">
+                        <div className="options-item">A little more about myself</div><div className="options-item">→</div>
+                      </button>
+                      <button onClick={() => {
+                        const element = document.getElementById('contact-container');
+                        const topPosition = element.getBoundingClientRect().top;
+                        window.scrollBy({ 
+                          top: topPosition - 105, 
+                          behavior: 'smooth' 
+                        });
+                        }} className="options-container">
+                        <div className="options-item">Credits</div><div className="options-item">→</div>
+                      </button>
+                      <button onClick={() => {
+                        const element = document.getElementById('extras-container');
+                        const topPosition = element.getBoundingClientRect().top;
+                        window.scrollBy({ 
+                          top: topPosition - 10, 
+                          behavior: 'smooth' 
+                        });
+                        }} className="options-container">
+                        <div className="options-item">Extras</div><div className="options-item">→</div>
+                      </button>
                     </div>
                 </div>
             </LazyLoad>
@@ -165,10 +204,80 @@ function HomeContent() {
   );
 }
 
+function AboutMe(){
+  return(
+    <div id="about-container">
+      <div className="title-text fadeBot">A Quick Introduction</div>
+      <LazyLoad className="block1 fadeBot">
+      <div id="vert-2"></div>
+        <div className="desc-text">Before calling Waterloo home, I graduated from Dr. Norman Bethune CI, a small school in Scarborough, Ontario. Today, I try to explore as many areas as possible to get a feel on what I might do in the future. Right now, I'm looking forward to learning more about backend development and APIs. I'll admit my projects aren't very impressive, but I'm happy with them anyways.</div>
+        <img className="uw img " alt="picture of waterloo university" src={uwPic}></img>
+      </LazyLoad>
+      <LazyLoad className="block2 fadeBot">
+      <img className="img desc-img" alt="picture of waterloo university" src={desc_pic}></img>
+        <div id="vert-1"></div>
+        <div className="desc-text">Outside of the classroom, you might find me at the gym playing pickup or holed up in my room playing Starcraft. I also love camping and traveling. I really enjoy checking out different cultures and all sorts of foods. Next up on the itinerary is J̶a̶p̶a̶n̶, C̶o̶s̶t̶a̶ R̶i̶c̶a̶, Thailand or Spain.</div>
+      </LazyLoad>
+    </div>
+  );
+}
+function Credit(){
+  return(
+    <div id="contact-container" className="section-container">
+      <LazyLoad className="title-text fadeBot">Credits</LazyLoad>
+      <div className="credits-container">
+        <LazyLoad className="desc-text fadeBot">This website was made using Reactjs + Vite. Huge thanks to Vickey Zhou for drawing, and XXXXXXX for animating the art on the home screen!</LazyLoad>
+        <LazyLoad className="links-container fadeBot">
+            <a className="credit-link" href="https://github.com/DrakeDong0/DrakeDong0.github.io/blob/main/README.md" target="_blank">Resources Used</a>
+            <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out Vickey's work</a>
+            <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out XXXXXX's work</a>
+        </LazyLoad>
+      </div>
+    </div>
+  );
+}
+function Extras(){
+  const images = import.meta.glob('../../assets/gallery/*.jpg');
+  return(
+    <div id="extras-container" className="section-container">
+      <LazyLoad className="title-text fadeBot">Extras</LazyLoad>
+      <div id="gallery-container">
+        <div id="column">
+          <div><img className="gallery-img" src={img1}></img></div>
+          <div><img className="gallery-img" src={img13}></img></div>
+          <div><img className="gallery-img" src={img8}></img></div>
+          <div><img className="gallery-img" src={img15}></img></div>
+        </div>
+        <div id="column">
+          <div><img className="gallery-img" src={img4}></img></div>
+          <div><img className="gallery-img" src={img5}></img></div>
+          <div><img className="gallery-img" src={img6}></img></div>
+          <div><img className="gallery-img" src={img14}></img></div>
+        </div>
+        <div id="column">          
+          <div><img className="gallery-img" src={img3}></img></div>
+          <div><img className="gallery-img" src={img7}></img></div>
+          <div><img className="gallery-img" src={img9}></img></div>
+          <div><img className="gallery-img" src={img2}></img></div>
+        </div>
+        <div id="column">          
+          <div><img className="gallery-img" src={img10}></img></div>
+          <div><img className="gallery-img" src={img11}></img></div>
+          <div><img className="gallery-img" src={img12}></img></div>
+          <div><img className="gallery-img" src={img16}></img></div>
+        </div>
+      </div>
+      
+    </div>
+  );
+}
 export default function Home() {
   return (
     <>
       <HomeContent />
+      <AboutMe></AboutMe>
+      <Credit></Credit>
+      <Extras></Extras>
       <Header></Header>
       <Footer />
     </>
