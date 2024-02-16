@@ -178,6 +178,16 @@ function HomeContent() {
                         <div className="options-item">A little more about myself</div><div className="options-item">→</div>
                       </button>
                       <button onClick={() => {
+                        const element = document.getElementById('about-container');
+                        const topPosition = element.getBoundingClientRect().top;
+                        window.scrollBy({ 
+                          top: topPosition - 105, 
+                          behavior: 'smooth' 
+                        });
+                        }} className="options-container">
+                        <div className="options-item">Education</div><div className="options-item">→</div>
+                      </button>
+                      <button onClick={() => {
                         const element = document.getElementById('contact-container');
                         const topPosition = element.getBoundingClientRect().top;
                         window.scrollBy({ 
@@ -203,7 +213,6 @@ function HomeContent() {
         </div>
   );
 }
-
 function AboutMe(){
   return(
     <div id="about-container">

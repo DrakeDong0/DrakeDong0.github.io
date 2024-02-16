@@ -5,10 +5,10 @@ import '../../Components/style.css'
 
 import Header from "../../Components/Header/Header";
 
-function ExtrasContent(){
+function WorkContent(){
     return(
         <div className="extras-container">
-            <h1>work in progress</h1>
+            <h1>Work</h1>
         </div>
     );
 }
@@ -16,7 +16,7 @@ function ExtrasContent(){
 export default function (){
     return(
         <>
-            <ExtrasContent></ExtrasContent>
+            <WorkContent></WorkContent>
             <Header></Header>
         </>
     );

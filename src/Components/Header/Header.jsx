@@ -31,7 +31,7 @@ export default function Header(){
                 <Link to="/Projects">
                     <button className="header-text">Projects</button>
                 </Link>
-                <Link to="/Extras">
+                <Link to="/Work">
                     <button className="header-text">Work</button>
                 </Link>
             </div>

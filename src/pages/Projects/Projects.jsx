@@ -5,10 +5,10 @@ import '../../Components/style.css'
 
 import Header from "../../Components/Header/Header";
 
-function ExtrasContent(){
+function ProjectsContent(){
     return(
-        <div className="extras-container">
-            <h1>work in progress</h1>
+        <div className="projects-container">
+            <div className="section-title">Projects</div>
         </div>
     );
 }
@@ -16,7 +16,7 @@ function ExtrasContent(){
 export default function (){
     return(
         <>
-            <ExtrasContent></ExtrasContent>
+            <ProjectsContent></ProjectsContent>
             <Header></Header>
         </>
     );

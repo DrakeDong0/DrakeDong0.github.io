@@ -71,3 +71,22 @@ a{
 a {
     text-decoration: none;
 }
+.typewriter h1 {
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.4vw;
+    letter-spacing: .10em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+.section-title{
+    font-size: clamp(20px, 2.4vw, 60px);
+    width: 100%;
+    color: rgb(255,165,0);
+    display:flex;
+    justify-content: center;
+    margin-top: 10vh;
+}

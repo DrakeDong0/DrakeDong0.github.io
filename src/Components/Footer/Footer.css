@@ -47,3 +47,9 @@ a{
 a:hover {
     color: rgba(255,255,255, 0.7);
 }
+
+@media (max-aspect-ratio: 1/0.7) {
+    .footer-container{
+        height:25vw !important;
+    }
+}
