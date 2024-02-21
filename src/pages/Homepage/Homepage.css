@@ -77,7 +77,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
-    height: 66vh;
+    margin-top: 30vh;
     gap: 10vw;
     padding: 20px;
     margin-left: 20%;
@@ -213,7 +213,7 @@
     
 }
 .img{
-    border-radius:25px;
+    border-radius:5%;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
     width:22vw;
 }

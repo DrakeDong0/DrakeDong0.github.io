@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&family=Quicksand&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
 
 
 *{
@@ -83,10 +84,11 @@ a {
       blink-caret .75s step-end infinite;
   }
 .section-title{
-    font-size: clamp(20px, 2.4vw, 60px);
+    font-size: clamp(50px, 3vw, 60px);
     width: 100%;
     color: rgb(255,165,0);
     display:flex;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 50px;
+    margin-bottom:20px;
 }

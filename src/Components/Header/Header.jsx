@@ -17,6 +17,16 @@ export default function Header(){
         navigate('/');
         setTimeout(() => window.scrollTo(0, 900), 100); 
       };
+    const ProjectClick = (e) => {
+        e.preventDefault();
+        navigate('/Projects');
+        window.scrollTo(0, 0);
+    };
+    const WorkClick = (e) => {
+        e.preventDefault();
+        navigate('/Work');
+        window.scrollTo(0, 0);
+    };
 
 
     return(
@@ -29,10 +39,10 @@ export default function Header(){
                     <button className="header-text" onClick={AboutClick}>About Me</button>
                 </Link>
                 <Link to="/Projects">
-                    <button className="header-text">Projects</button>
+                    <button className="header-text" onClick={ProjectClick}>Projects</button>
                 </Link>
                 <Link to="/Work">
-                    <button className="header-text">Work</button>
+                    <button className="header-text" onClick={WorkClick}>Work</button>
                 </Link>
             </div>
         </header>

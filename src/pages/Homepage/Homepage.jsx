@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import "./Homepage.css";
 import "../../Components/style.css";
 import "../../pages/Homepage/text-animation.css";
-import "../../js/Homepage.js"
 
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer"
@@ -12,6 +11,7 @@ import bg from '../../assets/bg-video.mp4';
 import uwPic from '../../assets/uw.jpg';
 import ProfilePicture from '../../assets/pfp.jpg';
 import desc_pic from '../../assets/pic1.jpg'
+import resumePDF from '../../../public/Drake_Dong_Resume.pdf'
 
 import LazyLoad from '../../Components/LazyLoad.jsx';
 
@@ -61,10 +61,11 @@ function HomeContent() {
         const city = data.location.name;
         const province = data.location.region;
         console.log(data);
+        console.log(dayNight);
 
 
         let titleText = 'Good Day.';
-        if ((dayNight => 18) || (dayNight <= 5)) {
+        if ((dayNight >= 18) || (dayNight <= 5)) {
           titleText = 'Good Evening.';
         } else if ((dayNight >= 6) && (dayNight < 12)) {
           titleText = 'Good Morning.';
@@ -102,7 +103,6 @@ function HomeContent() {
   useEffect(() => {
     fetchWeatherData();
     const intervalId = setInterval(fetchWeatherData, 600000); 
-    import ('../../js/Homepage.js')
     return () => clearInterval(intervalId);
   }, []);
 
@@ -167,6 +167,7 @@ function HomeContent() {
                     </div>
                     <div className="text">I'm a first year Electrical Engineering student at the University of Waterloo.</div>
                     <div className="options">
+                      
                       <button onClick={() => {
                         const element = document.getElementById('about-container');
                         const topPosition = element.getBoundingClientRect().top;
@@ -177,16 +178,11 @@ function HomeContent() {
                         }} className="options-container">
                         <div className="options-item">A little more about myself</div><div className="options-item">→</div>
                       </button>
-                      <button onClick={() => {
-                        const element = document.getElementById('about-container');
-                        const topPosition = element.getBoundingClientRect().top;
-                        window.scrollBy({ 
-                          top: topPosition - 105, 
-                          behavior: 'smooth' 
-                        });
-                        }} className="options-container">
-                        <div className="options-item">Education</div><div className="options-item">→</div>
-                      </button>
+
+                      <a href={resumePDF} download="Drake_Dong_Resume.pdf" className="options-container">
+                        <div className="options-item">Resume</div><div className="options-item">→</div>
+                      </a>
+
                       <button onClick={() => {
                         const element = document.getElementById('contact-container');
                         const topPosition = element.getBoundingClientRect().top;
@@ -197,6 +193,7 @@ function HomeContent() {
                         }} className="options-container">
                         <div className="options-item">Credits</div><div className="options-item">→</div>
                       </button>
+                      
                       <button onClick={() => {
                         const element = document.getElementById('extras-container');
                         const topPosition = element.getBoundingClientRect().top;
@@ -219,7 +216,7 @@ function AboutMe(){
       <div className="title-text fadeBot">A Quick Introduction</div>
       <LazyLoad className="block1 fadeBot">
       <div id="vert-2"></div>
-        <div className="desc-text">Before calling Waterloo home, I graduated from Dr. Norman Bethune CI, a small school in Scarborough, Ontario. Today, I try to explore as many areas as possible to get a feel on what I might do in the future. Right now, I'm looking forward to learning more about backend development and APIs. I'll admit my projects aren't very impressive, but I'm happy with them anyways.</div>
+        <div className="desc-text">Before calling Waterloo home, I graduated from Dr. Norman Bethune CI, a small school in Scarborough, Ontario. Today, I try to explore as many areas as possible to get a feel on what I might do in the future. Right now, I'm looking forward to learning more about backend development. I'll admit my projects aren't very impressive, but I'm happy with them anyways.</div>
         <img className="uw img " alt="picture of waterloo university" src={uwPic}></img>
       </LazyLoad>
       <LazyLoad className="block2 fadeBot">
@@ -239,7 +236,7 @@ function Credit(){
         <LazyLoad className="links-container fadeBot">
             <a className="credit-link" href="https://github.com/DrakeDong0/DrakeDong0.github.io/blob/main/README.md" target="_blank">Resources Used</a>
             <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out Vickey's work</a>
-            <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out XXXXXX's work</a>
+            {/* <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out XXXXXX's work</a> */}
         </LazyLoad>
       </div>
     </div>
