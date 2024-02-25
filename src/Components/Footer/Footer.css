@@ -52,4 +52,8 @@ a:hover {
     .footer-container{
         height:25vw !important;
     }
+    .footer-content2,
+    .footer-content3{
+        width: 35%;
+    }
 }
