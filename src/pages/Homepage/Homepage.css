@@ -69,8 +69,8 @@
     }
     .desc-text{
         letter-spacing: 1px;
-        line-height: 2vw !important;
-        font-size: clamp()
+        line-height: 3vw !important;
+
     }
   }
 .profile-container{
@@ -200,10 +200,8 @@
     max-width:45%;
     font-family: 'Quicksand', sans-serif;
     overflow-wrap: break-word;
-    font-size: clamp(12px, 0.6vw, 40px);
-    letter-spacing: 2px;
+    font-size: clamp(16px, 0.9vw, 40px);
     line-height: 1.5vw;
-    
 }
 .block1,
 .block2 {

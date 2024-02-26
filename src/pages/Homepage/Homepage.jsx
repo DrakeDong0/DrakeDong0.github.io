@@ -232,7 +232,7 @@ function Credit(){
     <div id="contact-container" className="section-container">
       <LazyLoad className="title-text fadeBot">Credits</LazyLoad>
       <div className="credits-container">
-        <LazyLoad className="desc-text fadeBot">This website was made using Reactjs + Vite. Huge thanks to Vickey Zhou for drawing, and XXXXXXX for animating the art on the home screen!</LazyLoad>
+        <LazyLoad className="desc-text fadeBot">This website was made using ReactJS + Vite. Huge thanks to Vickey Zhou for drawing, and XXXXXXX for animating the art on the home screen!</LazyLoad>
         <LazyLoad className="links-container fadeBot">
             <a className="credit-link" href="https://github.com/DrakeDong0/DrakeDong0.github.io/blob/main/README.md" target="_blank">Resources Used</a>
             <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out Vickey's work</a>
