@@ -10,7 +10,6 @@ import ProjectSlide from '../../Components/ProjectSlide/ProjectSlide';
 import smartnose from '../../assets/project-imgs/smartnose/smartnose.png';
 import smartnoseDG from '../../assets/project-imgs/smartnose/smartnose-diagram.png';
 import stm32 from '../../assets/stm32.png';
-import aws from '../../assets/beanstalk.png';
 import website1 from '../../assets/project-imgs/website_new/website1.png'
 import website2 from '../../assets/project-imgs/website_new/website2.png'
 import uploadify1 from '../../assets/project-imgs/uploadify/uploadify1.png'
@@ -61,9 +60,6 @@ function ProjectsContent(){
                 <a target="_blank" href="https://code.visualstudio.com/"><img className="tech-img" alt-text="VScode icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></a>
                 <a target="_blank" href="https://react.dev/"><img className="tech-img" alt-text="Reactjs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
                 <a target="_blank" href="https://vitejs.dev/"><img className="tech-img" alt-text="Vitejs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"  /></a>
-                <a target="_blank" href="https://www.figma.com/"><img className="tech-img" alt-text="Figma icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"  /></a>
-                <a target="_blank" href="https://www.mysql.com/"><img className="tech-img" alt-text="Mysql icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"  /></a>
-                <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/"><img className="tech-img" alt-text="AWS Beanstalk icon" src={aws}/></a>
             </div> 
             <ProjectSlide
                     images={website_newCarousel} 

@@ -1,6 +1,69 @@
-.extras-container{
+
+.work-container{
     width: 100%;
     margin-top: 8vh;
-    height: 80vh;
+    height: 92vh;
     background-color: #1A1A1A;
+}
+.tech-bar{
+    display:flex;
+    height: 4.5vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 75px;
+    overflow-y:hidden;
+}.tech-img {
+    width: 2.5vw;
+    height: 2.5vw;
+    transition: transform 0.2s; 
+}
+.tech-img:hover {
+    transform: scale(1.1); 
+}
+.work-exp{
+    display:flex;
+    width: 80vw;
+    border-top: 4px solid orange;
+    padding:50px;
+}
+.work-exp-container{
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.company_logo{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+.work-text{
+    display:flex;
+    flex-direction:column;
+    margin-left: 90px;
+}
+
+#work-name, .arrow{
+    color:orange;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.3vw;
+}
+#work-role{
+    margin-top: 10px;
+    font-style: italic;
+}
+#work-date{
+    margin-top: 10px;
+    color: rgba(255,255,255,0.6);
+}
+.work-content{
+    margin-top: 15px;
+    color: rgba(255,255,255,0.85);
+    line-height: 32px;
+}
+.top-row{
+    display:flex;
 }

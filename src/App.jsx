@@ -13,7 +13,7 @@ export default function App() {
       <Routes>
           <Route path='/' element={<Homepage />}></Route>
           <Route path='/Projects' element={<ProjectPage />}></Route>
-          {/* <Route path='/Work' element={<Work />}></Route> */}
+          <Route path='/Work' element={<Work />}></Route>
         </Routes>
     </BrowserRouter>
   );

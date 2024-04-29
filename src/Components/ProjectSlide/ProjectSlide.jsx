@@ -1,5 +1,5 @@
-import React, { useState } from 'react'; // Import useState here
-import LazyLoad from '../LazyLoad.jsx';
+import React, { useState } from 'react'; 
+
 
 function useCarousel(imageSources) {
   const [currentIndex, setCurrentIndex] = useState(0);

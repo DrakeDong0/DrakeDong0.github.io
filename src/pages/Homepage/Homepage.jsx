@@ -183,7 +183,7 @@ function HomeContent() {
                         <div className="options-item">Resume</div><div className="options-item">→</div>
                       </a>
 
-                      <button onClick={() => {
+                      {/* <button onClick={() => {
                         const element = document.getElementById('contact-container');
                         const topPosition = element.getBoundingClientRect().top;
                         window.scrollBy({ 
@@ -192,7 +192,7 @@ function HomeContent() {
                         });
                         }} className="options-container">
                         <div className="options-item">Credits</div><div className="options-item">→</div>
-                      </button>
+                      </button> */}
                       
                       <button onClick={() => {
                         const element = document.getElementById('extras-container');
@@ -227,21 +227,21 @@ function AboutMe(){
     </div>
   );
 }
-function Credit(){
-  return(
-    <div id="contact-container" className="section-container">
-      <LazyLoad className="title-text fadeBot">Credits</LazyLoad>
-      <div className="credits-container">
-        <LazyLoad className="desc-text fadeBot">This website was made using ReactJS + Vite. Huge thanks to Vickey Zhou for drawing, and XXXXXXX for animating the art on the home screen!</LazyLoad>
-        <LazyLoad className="links-container fadeBot">
-            <a className="credit-link" href="https://github.com/DrakeDong0/DrakeDong0.github.io/blob/main/README.md" target="_blank">Resources Used</a>
-            <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out Vickey's work</a>
-            {/* <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out XXXXXX's work</a> */}
-        </LazyLoad>
-      </div>
-    </div>
-  );
-}
+// function Credit(){
+//   return(
+//     <div id="contact-container" className="section-container">
+//       <LazyLoad className="title-text fadeBot">Credits</LazyLoad>
+//       <div className="credits-container">
+//         <LazyLoad className="desc-text fadeBot">This website was made using ReactJS + Vite. Huge thanks to Vickey Zhou for drawing, and XXXXXXX for animating the art on the home screen!</LazyLoad>
+//         <LazyLoad className="links-container fadeBot">
+//             <a className="credit-link" href="https://github.com/DrakeDong0/DrakeDong0.github.io/blob/main/README.md" target="_blank">Resources Used</a>
+//             <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out Vickey's work</a>
+//             {/* <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out XXXXXX's work</a> */}
+//         </LazyLoad>
+//       </div>
+//     </div>
+//   );
+// }
 function Extras(){
   const images = import.meta.glob('../../assets/gallery/*.jpg');
   return(
@@ -282,7 +282,7 @@ export default function Home() {
     <>
       <HomeContent />
       <AboutMe></AboutMe>
-      <Credit></Credit>
+      {/* <Credit></Credit> */}
       <Extras></Extras>
       <Header></Header>
       <Footer />
