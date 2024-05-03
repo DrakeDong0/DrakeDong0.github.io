@@ -29,8 +29,10 @@ import uploadify12 from '../../assets/project-imgs/uploadify/uploadify12.png'
 import doorbot1 from '../../assets/project-imgs/doorbot/doorbot1.jpg'
 import doorbot2 from '../../assets/project-imgs/doorbot/doorbot2.jpg'
 import websiteold from '../../assets/project-imgs/oldwebsite/oldwebsite.png'
+import wip from '../../assets/wip.png'
 
 function ProjectsContent(){
+    const wipCarousel = [wip]
     const smartNoseCarousel = [smartnose, smartnoseDG]
     const website_newCarousel = [website2, website1]
     const uploadifyCarousel = [uploadify1, uploadify2, uploadify3, uploadify11, uploadify12]
@@ -60,7 +62,23 @@ function ProjectsContent(){
                 <a target="_blank" href="https://code.visualstudio.com/"><img className="tech-img" alt-text="VScode icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></a>
                 <a target="_blank" href="https://react.dev/"><img className="tech-img" alt-text="Reactjs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
                 <a target="_blank" href="https://vitejs.dev/"><img className="tech-img" alt-text="Vitejs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"  /></a>
+                <a target="_blank" href="https://opencv.org/"><img className="tech-img" alt-text="OpenCV icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"  /></a>
+
             </div> 
+            <ProjectSlide
+                    images={wipCarousel} 
+                    title="Eye Tracker (WIP)"
+                    date="Apr 2024"
+                    description={[
+                        "This project uses opencv and a mediapipe face mesh to read the location of the eyes and pupils. ",
+                        "Since this is my first time playing around with ai, I don't really have an idea on what the finished product will look like. One idea is to let the program be a computer mouse alternative."
+                    ]}
+                    skills={[
+                        { name: "Python", level:  6},
+                        { name: "OpenCV", level:  2}
+                    ]}
+                    sourceLink="https://github.com/DrakeDong0/eyetracker"
+            />
             <ProjectSlide
                     images={website_newCarousel} 
                     title="Personal Website"

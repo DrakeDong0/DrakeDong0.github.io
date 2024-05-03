@@ -4,6 +4,7 @@ import '../../Components/style.css'
 import LazyLoad from '../../Components/LazyLoad';
 import Header from "../../Components/Header/Header";
 import Footer from '../../Components/Footer/Footer';
+import WorkExperience from '../../Components/WorkSlide/WorkSlide'
 
 import aws from '../../assets/beanstalk.png';
 import silai_logo from '../../assets/work_logos/silai_logo.png';
@@ -24,23 +25,19 @@ function WorkContent(){
                 <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/"><img className="tech-img" alt-text="AWS Beanstalk icon" src={aws}/></a>
             </div> 
             <div className="work-exp-container">
-                <div className="work-exp">
-                    <img className="company_logo" src={silai_logo}></img>
-                    <div className="work-text">
-                        <div className="top-row">
-                            <div id="work-name">Silai</div>
-                        </div>
-                        <div id="work-role">Full Stack Developer</div>
-                        <div id="work-date">Jan 2024 - Apr 2024</div>
-                        <div className="work-content">
-                            <p>- Built mobile webpages utilizing HTML, CSS, JavaScript, and Jinja</p>
-                            <p>- Engineered and integrated a backend database using MySQL.</p>
-                            <p>- Designed REST API endpoints using Flask</p>
-                            <p>- Deployed applications to AWS Beanstalk and managed databases on AWS RDS, optimizing cloud operations and scalability.</p>
-                            <p>- Developed a gyroscope verification tool with TensorFlow to validate camera input data accuracy.</p>
-                        </div>
-                    </div>
-                </div>
+                <WorkExperience
+                    logo={silai_logo}
+                    name="Silai"
+                    role="Full Stack Developer"
+                    date="Jan 2024 - Apr 2024"
+                    responsibilities={[
+                        "- Built client facing web pages utilizing HTML, CSS, JavaScript, and Jinja",
+                        "- Engineered and integrated a backend database using MySQL.",
+                        "- Designed new REST API endpoints using Flask",
+                        "- Deployed applications to AWS Beanstalk and managed databases on AWS RDS.",
+                        "- Developed a gyroscope verification tool with TensorFlow to validate camera input data accuracy."
+                      ]}
+                />
             </div>
         </div>
     );

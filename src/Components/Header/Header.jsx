@@ -29,22 +29,23 @@ export default function Header(){
     };
 
 
-    return(
+    return (
         <header className="header-container">
             <Link to="/">
-                <button className="home-text" onClick={HomeClick}>Home</button>
+                <button className="home-text underline" onClick={HomeClick}>Home</button>
             </Link>
             <div className="header-items">
                 <Link to="/">
-                    <button className="header-text" onClick={AboutClick}>About Me</button>
+                    <button className="header-text underline" onClick={AboutClick}>About Me</button>
                 </Link>
                 <Link to="/Projects">
-                    <button className="header-text" onClick={ProjectClick}>Projects</button>
+                    <button className="header-text underline" onClick={ProjectClick}>Projects</button>
                 </Link>
                 <Link to="/Work">
-                    <button className="header-text" onClick={WorkClick}>Work</button>
+                    <button className="header-text underline" onClick={WorkClick}>Work</button>
                 </Link>
             </div>
+            <div className="invisblock"></div>
         </header>
     );
 }
