@@ -1,6 +1,8 @@
-# A new website in the making...
+# Personal Website
 
-this is a new react/vite website I'm working on starting feburary 2024.
+This is a react/vite website I made in Feburary of 2024. 
+
+The page is curently deployed using github pages here: https://drakedong0.github.io
 
 Code Credits
 
