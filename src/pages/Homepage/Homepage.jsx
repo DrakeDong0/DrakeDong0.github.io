@@ -12,7 +12,6 @@ import uwPic from '../../assets/uw.jpg';
 import ProfilePicture from '../../assets/pfp.jpg';
 import desc_pic from '../../assets/pic1.jpg'
 import resumePDF from '../../../public/Drake_Dong_Resume.pdf'
-
 import LazyLoad from '../../Components/LazyLoad.jsx';
 
 import img1 from '../../assets/gallery/img1.jpg'
@@ -31,6 +30,11 @@ import img13 from '../../assets/gallery/img13.jpg'
 import img14 from '../../assets/gallery/img14.jpg'
 import img15 from '../../assets/gallery/img15.jpg'
 import img16 from '../../assets/gallery/img16.jpg'
+import img17 from '../../assets/gallery/img17.jpg'
+import img18 from '../../assets/gallery/img18.jpg'
+import img19 from '../../assets/gallery/img19.jpg'
+import img20 from '../../assets/gallery/img20.jpg'
+import img21 from '../../assets/gallery/img21.jpg'
 
 function HomeContent() {
   const [weatherData, setWeatherData] = useState({
@@ -165,7 +169,7 @@ function HomeContent() {
                     <div class="typewriter">
                         <h1>Hi! My name is Drake.</h1>
                     </div>
-                    <div className="text">I'm a first year Electrical Engineering student at the University of Waterloo.</div>
+                    <div className="text">I'm a Second year Computer Engineering student at the University of Waterloo.</div>
                     <div className="options">
                       
                       <button onClick={() => {
@@ -222,7 +226,7 @@ function AboutMe(){
       <LazyLoad className="block2 fadeBot">
       <img className="img desc-img" alt="picture of waterloo university" src={desc_pic}></img>
         <div id="vert-1"></div>
-        <div className="desc-text">Outside of the classroom, you might find me at the gym playing pickup or holed up in my room playing Starcraft. I also love camping and traveling. I really enjoy checking out different cultures and all sorts of foods. Next up on the itinerary is J̶a̶p̶a̶n̶, C̶o̶s̶t̶a̶ R̶i̶c̶a̶, Thailand or Spain.</div>
+        <div className="desc-text">Outside of the classroom, you might find me at the gym playing pickup or holed up in my room playing Starcraft. I also love camping and traveling. I really enjoy checking out different cultures and all sorts of foods. Next up on the itinerary is J̶a̶p̶a̶n̶, C̶o̶s̶t̶a̶ R̶i̶c̶a̶, Thailand or S̶p̶a̶i̶n̶.</div>
       </LazyLoad>
     </div>
   );
@@ -253,24 +257,29 @@ function Extras(){
           <div><img className="gallery-img" src={img13}></img></div>
           <div><img className="gallery-img" src={img8}></img></div>
           <div><img className="gallery-img" src={img15}></img></div>
+          <div><img className="gallery-img" src={img21}></img></div>
         </div>
         <div id="column">
           <div><img className="gallery-img" src={img4}></img></div>
           <div><img className="gallery-img" src={img5}></img></div>
           <div><img className="gallery-img" src={img6}></img></div>
           <div><img className="gallery-img" src={img14}></img></div>
+          <div><img className="gallery-img" src={img18}></img></div>
         </div>
         <div id="column">          
           <div><img className="gallery-img" src={img3}></img></div>
           <div><img className="gallery-img" src={img7}></img></div>
           <div><img className="gallery-img" src={img9}></img></div>
           <div><img className="gallery-img" src={img2}></img></div>
+          <div><img className="gallery-img" src={img19}></img></div>
+          <div><img className="gallery-img" src={img17}></img></div>
         </div>
         <div id="column">          
           <div><img className="gallery-img" src={img10}></img></div>
           <div><img className="gallery-img" src={img11}></img></div>
           <div><img className="gallery-img" src={img12}></img></div>
           <div><img className="gallery-img" src={img16}></img></div>
+          <div><img className="gallery-img" src={img20}></img></div>
         </div>
       </div>
       

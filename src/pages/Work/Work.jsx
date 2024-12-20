@@ -8,6 +8,7 @@ import WorkExperience from '../../Components/WorkSlide/WorkSlide'
 
 import aws from '../../assets/beanstalk.png';
 import silai_logo from '../../assets/work_logos/silai_logo.png';
+import games_instutite_logo from '../../assets/work_logos/games_instutite_logo.png'
 function WorkContent(){
     return(
         <div className="work-container">
@@ -22,9 +23,27 @@ function WorkContent(){
                 <a target="_blank" href="https://code.visualstudio.com/"><img className="tech-img" alt-text="VScode icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></a>
                 <a target="_blank" href="https://www.figma.com/"><img className="tech-img" alt-text="Figma icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"  /></a>
                 <a target="_blank" href="https://www.mysql.com/"><img className="tech-img" alt-text="Mysql icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"  /></a>
-                <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/"><img className="tech-img" alt-text="AWS Beanstalk icon" src={aws}/></a>
+                <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/"><img className="tech-img" alt-text="AWS Beanstalk icon" src={aws} /></a>
+                <a target="_blank" href="https://www.mongodb.com/"><img className="tech-img" alt-text="Mongodb icon" src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" /></a>
+                <a target="_blank" href="https://go.dev/"><img className="tech-img" alt-text="Golang icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" /></a>
+                <a target="_blank" href="https://www.docker.com/"><img className="tech-img" alt-text="Docker icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" /></a>
+                <a target="_blank" href="https://www.portainer.io/"><img className="tech-img" alt-text="Portainer icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original.svg"/></a>
+
             </div> 
             <div className="work-exp-container">
+            <WorkExperience
+                    logo={games_instutite_logo}
+                    name="The Rhetoricon Project"
+                    role="Full Stack Developer"
+                    date="Sept 2024 - Dec 2024"
+                    responsibilities={[
+                        "- Helped overhaul frontend pages using React and Vite.",
+                        "- Configured, routed, and deployed project site with Docker and Portainer.",
+                        "- Wrote new API endpoints using Go",
+                        "- Wrote and optimized MongoDB queries",
+                        "- Developed a new database backup utility enabling updates without data remigration."
+                      ]}
+                />
                 <WorkExperience
                     logo={silai_logo}
                     name="Silai"
