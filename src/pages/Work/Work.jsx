@@ -37,11 +37,11 @@ function WorkContent(){
                     role="Full Stack Developer"
                     date="Sept 2024 - Dec 2024"
                     responsibilities={[
-                        "- Helped overhaul frontend pages using React and Vite.",
+                        "- Led development of GoFigure, responsible for architecture, design, and implementation of new features.",
+                        "- Wrote new API endpoints using Go and developed MongoDB queries.",
                         "- Configured, routed, and deployed project site with Docker and Portainer.",
-                        "- Wrote new API endpoints using Go",
-                        "- Wrote and optimized MongoDB queries",
-                        "- Developed a new database backup utility enabling updates without data remigration."
+                        "- Developed a new database backup utility allowing updates without remigrating data.",
+                        "- Helped overhaul frontend website using React.js."
                       ]}
                 />
                 <WorkExperience
