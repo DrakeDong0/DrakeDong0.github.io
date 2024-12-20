@@ -26,7 +26,6 @@
 .work-exp{
     display:flex;
     width: 80vw;
-    border-top: 4px solid orange;
     padding:50px;
 }
 .work-exp-container{

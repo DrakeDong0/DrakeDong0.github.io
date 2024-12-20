@@ -67,17 +67,15 @@ function ProjectsContent(){
             </div> 
             <ProjectSlide
                     images={wipCarousel} 
-                    title="Eye Tracker (WIP)"
-                    date="Apr 2024"
+                    title="Inverse r/wallstreetbets trader bot"
+                    date="Dec 2024"
                     description={[
-                        "This project uses opencv and a mediapipe face mesh to read the location of the eyes and pupils. ",
-                        "Since this is my first time playing around with ai, I don't really have an idea on what the finished product will look like. One idea is to let the program be a computer mouse alternative."
+                        "Looking to build a bot that does the opposite of wallstreetbets biggest yolos cause I think it would be funny if it worked.",
                     ]}
                     skills={[
                         { name: "Python", level:  6},
-                        { name: "OpenCV", level:  2}
                     ]}
-                    sourceLink="https://github.com/DrakeDong0/eyetracker"
+                    sourceLink="https://github.com/DrakeDong0/trader"
             />
             <ProjectSlide
                     images={website_newCarousel} 
