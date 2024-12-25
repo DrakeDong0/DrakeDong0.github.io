@@ -2,48 +2,24 @@ import './Header.css'
 import "../../Components/style.css"
 
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
- 
+import { useNavigate } from 'react-router-dom';
 
-export default function Header(){
+
+export default function Header() {
     const navigate = useNavigate();
-    const HomeClick = (e) => {
-        e.preventDefault();
-        navigate('/');
-        window.scrollTo(0, 0);
-    };
     const AboutClick = (e) => {
         e.preventDefault();
         navigate('/');
-        setTimeout(() => window.scrollTo(0, 900), 100); 
-      };
-    const ProjectClick = (e) => {
-        e.preventDefault();
-        navigate('/Projects');
-        window.scrollTo(0, 0);
+        setTimeout(() => window.scrollTo(0, 900), 100);
     };
-    const WorkClick = (e) => {
-        e.preventDefault();
-        navigate('/Work');
-        window.scrollTo(0, 0);
-    };
-
 
     return (
         <header className="header-container">
-            <Link to="/">
-                <button className="home-text underline" onClick={HomeClick}>Home</button>
-            </Link>
+            <button className="header-text underline" onClick={() => navigate('/')}>Home</button>
             <div className="header-items">
-                <Link to="/">
-                    <button className="header-text underline" onClick={AboutClick}>About Me</button>
-                </Link>
-                <Link to="/Projects">
-                    <button className="header-text underline" onClick={ProjectClick}>Projects</button>
-                </Link>
-                <Link to="/Work">
-                    <button className="header-text underline" onClick={WorkClick}>Work</button>
-                </Link>
+                <button className="header-text underline" onClick={AboutClick}>About Me</button>
+                <button className="header-text underline" onClick={() => navigate('/Projects')}>Projects</button>
+                <button className="header-text underline" onClick={() => navigate('/Work')}>Work</button>
             </div>
             <div className="invisblock"></div>
         </header>

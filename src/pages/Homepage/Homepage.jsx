@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
 
 import "./Homepage.css";
 import "../../Components/style.css";
@@ -43,7 +45,7 @@ function HomeContent() {
     titleText: '',
     weatherIcon: ''
   });
-  
+
 
   const fetchWeatherData = () => {
     const apiKey = 'ec85b7a569f34ea38ce211649240902';
@@ -64,9 +66,6 @@ function HomeContent() {
         const tempC = data.current.temp_c;
         const city = data.location.name;
         const province = data.location.region;
-        console.log(data);
-        console.log(dayNight);
-
 
         let titleText = 'Good Day.';
         if ((dayNight >= 18) || (dayNight <= 5)) {
@@ -77,7 +76,7 @@ function HomeContent() {
           titleText = 'Good Afternoon.';
         }
 
-        let weatherIcon = 'sunny'; 
+        let weatherIcon = 'sunny';
         if ((dayNight >= 18) || (dayNight <= 5)) {
           weatherIcon = 'nights_stay';
         } else {
@@ -106,14 +105,14 @@ function HomeContent() {
 
   useEffect(() => {
     fetchWeatherData();
-    const intervalId = setInterval(fetchWeatherData, 600000); 
+    const intervalId = setInterval(fetchWeatherData, 600000);
     return () => clearInterval(intervalId);
   }, []);
 
   useEffect(() => {
     const handleClick = () => {
       const section = document.querySelector('#about-me');
-        section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' });
     };
     const downArrowElement = document.getElementById('down-arrow');
     downArrowElement.addEventListener('click', handleClick);
@@ -133,61 +132,61 @@ function HomeContent() {
 
   return (
     <div className="container">
-            <div id="black-cover"></div>
-            <div class="op-container">
-                <div class="box">
-                    <div class="title">
-                        <span class="block"></span>
-                        <h1 className="linear-color">{weatherData.titleText}</h1>
-                    </div>
-                    <div class="role">
-                        <div class="block"></div>
-                        <p>It's nice to meet you.</p>
-                    </div>
-                </div>
-            </div>
-            <div className="weather-info-container">  
-                <h1 id="temp">{weatherData.temp}</h1>
-                <span className="material-symbols-outlined" id="weather_icon">{weatherData.weatherIcon}</span>
-                <div id="location-text">{weatherData.location}</div>
-            </div>
+      <div id="black-cover"></div>
+      <div class="op-container">
+        <div class="box">
+          <div class="title">
+            <span class="block"></span>
+            <h1 className="linear-color">{weatherData.titleText}</h1>
+          </div>
+          <div class="role">
+            <div class="block"></div>
+            <p>It's nice to meet you.</p>
+          </div>
+        </div>
+      </div>
+      <div className="weather-info-container">
+        <h1 id="temp">{weatherData.temp}</h1>
+        <span className="material-symbols-outlined" id="weather_icon">{weatherData.weatherIcon}</span>
+        <div id="location-text">{weatherData.location}</div>
+      </div>
 
-            <div className="video-container">
-                <video loop autoPlay muted id='bg-video'>
-                    <source src={bg} type="video/mp4" />
-                </video>
-            </div>
-            <button>
-                <span class="material-symbols-outlined" id="down-arrow">
-                    keyboard_arrow_down
-                </span>
+      <div className="video-container">
+        <video loop autoPlay muted id='bg-video'>
+          <source src={bg} type="video/mp4" />
+        </video>
+      </div>
+      <button>
+        <span class="material-symbols-outlined" id="down-arrow">
+          keyboard_arrow_down
+        </span>
+      </button>
+      <div id="about-me"></div>
+      <LazyLoad className="profile-container fadeBot">
+        <img id="pfp" src={ProfilePicture} alt='Drake profile picture'></img>
+        <div className="title-container">
+          <div class="typewriter">
+            <h1>Hi! My name is Drake.</h1>
+          </div>
+          <div className="text">I'm a Second year Computer Engineering student at the University of Waterloo.</div>
+          <div className="options">
+
+            <button onClick={() => {
+              const element = document.getElementById('about-container');
+              const topPosition = element.getBoundingClientRect().top;
+              window.scrollBy({
+                top: topPosition - 105,
+                behavior: 'smooth'
+              });
+            }} className="options-container">
+              <div className="options-item">A little more about myself</div><div className="options-item">→</div>
             </button>
-            <div id="about-me"></div>
-            <LazyLoad className="profile-container fadeBot">
-                <img id="pfp" src={ProfilePicture} alt='Drake profile picture'></img>
-                <div className="title-container">
-                    <div class="typewriter">
-                        <h1>Hi! My name is Drake.</h1>
-                    </div>
-                    <div className="text">I'm a Second year Computer Engineering student at the University of Waterloo.</div>
-                    <div className="options">
-                      
-                      <button onClick={() => {
-                        const element = document.getElementById('about-container');
-                        const topPosition = element.getBoundingClientRect().top;
-                        window.scrollBy({ 
-                          top: topPosition - 105, 
-                          behavior: 'smooth' 
-                        });
-                        }} className="options-container">
-                        <div className="options-item">A little more about myself</div><div className="options-item">→</div>
-                      </button>
 
-                      <a href={resumePDF} download="Drake_Dong_Resume.pdf" className="options-container">
-                        <div className="options-item">Resume</div><div className="options-item">→</div>
-                      </a>
+            <a href={resumePDF} download="Drake_Dong_Resume.pdf" className="options-container">
+              <div className="options-item">Resume</div><div className="options-item">→</div>
+            </a>
 
-                      {/* <button onClick={() => {
+            {/* <button onClick={() => {
                         const element = document.getElementById('contact-container');
                         const topPosition = element.getBoundingClientRect().top;
                         window.scrollBy({ 
@@ -197,36 +196,41 @@ function HomeContent() {
                         }} className="options-container">
                         <div className="options-item">Credits</div><div className="options-item">→</div>
                       </button> */}
-                      
-                      <button onClick={() => {
-                        const element = document.getElementById('extras-container');
-                        const topPosition = element.getBoundingClientRect().top;
-                        window.scrollBy({ 
-                          top: topPosition - 10, 
-                          behavior: 'smooth' 
-                        });
-                        }} className="options-container">
-                        <div className="options-item">Extras</div><div className="options-item">→</div>
-                      </button>
-                    </div>
-                </div>
-            </LazyLoad>
+
+            <button onClick={() => {
+              const element = document.getElementById('extras-container');
+              const topPosition = element.getBoundingClientRect().top;
+              window.scrollBy({
+                top: topPosition - 10,
+                behavior: 'smooth'
+              });
+            }} className="options-container">
+              <div className="options-item">Extras</div><div className="options-item">→</div>
+            </button>
+          </div>
         </div>
+      </LazyLoad>
+    </div>
   );
 }
-function AboutMe(){
-  return(
+function AboutMe() {
+  const navigate = useNavigate();
+
+  return (
     <div id="about-container">
       <div className="title-text fadeBot">A Quick Introduction</div>
       <LazyLoad className="block1 fadeBot">
-      <div id="vert-2"></div>
+        <div id="vert"></div>
         <div className="desc-text">Before calling Waterloo home, I graduated from Dr. Norman Bethune CI, a small school in Scarborough, Ontario. Today, I try to explore as many areas as possible to get a feel on what I might do in the future. Right now, I'm looking forward to learning more about backend development. I'll admit my projects aren't very impressive, but I'm happy with them anyways.</div>
         <img className="uw img " alt="picture of waterloo university" src={uwPic}></img>
       </LazyLoad>
       <LazyLoad className="block2 fadeBot">
-      <img className="img desc-img" alt="picture of waterloo university" src={desc_pic}></img>
-        <div id="vert-1"></div>
-        <div className="desc-text">Outside of the classroom, you might find me at the gym playing pickup or holed up in my room playing Starcraft. I also love camping and traveling. I really enjoy checking out different cultures and all sorts of foods. Next up on the itinerary is J̶a̶p̶a̶n̶, C̶o̶s̶t̶a̶ R̶i̶c̶a̶, Thailand or S̶p̶a̶i̶n̶.</div>
+        <img className="img desc-img" alt="picture of waterloo university" src={desc_pic}></img>
+        <div id="vert"></div>
+        <div className="desc-text">
+          <div className="travel-text">Outside of the classroom, you might find me at the gym playing pickup or holed up in my room playing Starcraft. I also love camping and traveling. I really enjoy checking out different cultures and all sorts of foods. Next up on the itinerary is J̶a̶p̶a̶n̶, C̶o̶s̶t̶a̶ R̶i̶c̶a̶, Thailand or S̶p̶a̶i̶n̶.</div>
+          <button onClick={() => navigate('/Travel')} className="travel-text">- Places I've been</button>
+        </div>
       </LazyLoad>
     </div>
   );
@@ -246,9 +250,9 @@ function AboutMe(){
 //     </div>
 //   );
 // }
-function Extras(){
+function Extras() {
   const images = import.meta.glob('../../assets/gallery/*.jpg');
-  return(
+  return (
     <div id="extras-container" className="section-container">
       <LazyLoad className="title-text fadeBot">Extras</LazyLoad>
       <div id="gallery-container">
@@ -266,7 +270,7 @@ function Extras(){
           <div><img className="gallery-img" src={img14}></img></div>
           <div><img className="gallery-img" src={img18}></img></div>
         </div>
-        <div id="column">          
+        <div id="column">
           <div><img className="gallery-img" src={img3}></img></div>
           <div><img className="gallery-img" src={img7}></img></div>
           <div><img className="gallery-img" src={img9}></img></div>
@@ -274,7 +278,7 @@ function Extras(){
           <div><img className="gallery-img" src={img19}></img></div>
           <div><img className="gallery-img" src={img17}></img></div>
         </div>
-        <div id="column">          
+        <div id="column">
           <div><img className="gallery-img" src={img10}></img></div>
           <div><img className="gallery-img" src={img11}></img></div>
           <div><img className="gallery-img" src={img12}></img></div>
@@ -282,7 +286,7 @@ function Extras(){
           <div><img className="gallery-img" src={img20}></img></div>
         </div>
       </div>
-      
+
     </div>
   );
 }
@@ -290,10 +294,9 @@ export default function Home() {
   return (
     <>
       <HomeContent />
-      <AboutMe></AboutMe>
-      {/* <Credit></Credit> */}
-      <Extras></Extras>
-      <Header></Header>
+      <AboutMe />
+      <Extras />
+      <Header />
       <Footer />
     </>
   );

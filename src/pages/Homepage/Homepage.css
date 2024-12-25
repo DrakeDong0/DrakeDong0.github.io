@@ -203,6 +203,13 @@
     font-size: clamp(16px, 0.9vw, 40px);
     line-height: 1.5vw;
 }
+.travel-text{
+    font-family: 'Quicksand', sans-serif;
+    overflow-wrap: break-word;
+    font-size: clamp(16px, 0.9vw, 40px);
+    line-height: 1.5vw; 
+    margin-top: 1vh;
+}
 .block1,
 .block2 {
     width: 65%;
@@ -226,13 +233,7 @@
     margin-right: 10%;
     margin-left: 5%;
 }
-#vert-1{
-    margin: 25px;
-    width:2px;
-    height: 17vh;
-    background-color: rgba(255,255,255,0.4);
-}
-#vert-2{
+#vert{
     margin: 25px;
     width:2px;
     height: 22vh;
