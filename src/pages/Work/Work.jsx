@@ -8,7 +8,8 @@ import WorkExperience from '../../Components/WorkSlide/WorkSlide'
 
 import aws from '../../assets/beanstalk.png';
 import silai_logo from '../../assets/work_logos/silai_logo.png';
-import games_instutite_logo from '../../assets/work_logos/games_instutite_logo.png'
+import games_instutite_logo from '../../assets/work_logos/games_instutite_logo.png' 
+
 function WorkContent(){
     return(
         <div className="work-container">

@@ -187,11 +187,8 @@ function ProjectsContent(){
                     { name: "Arduino", level: 2 }
                 ]}
                 sourceLink=""
-            />
-            
-            
+            />  
         </div>
-
     );
 }
 

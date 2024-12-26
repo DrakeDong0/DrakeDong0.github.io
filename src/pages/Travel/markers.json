@@ -1,0 +1,203 @@
+[
+    {
+        "lat": 43.65107,
+        "lng": -79.347015,
+        "size": 25,
+        "color": "red",
+        "label": "Toronto, Canada",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2005"
+    },
+    {
+        "lat": 40.7128,
+        "lng": -74.0060,
+        "size": 20,
+        "color": "#f15bb5",
+        "label": "New York, USA",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2022"
+    },
+    {
+        "lat": 35.6762,
+        "lng": 139.6503,
+        "size": 20,
+        "color": "#d62828",
+        "label": "Tokyo, Japan",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2023"
+    },
+    {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "size": 20,
+        "color": "#ffc300",
+        "label": "Baltimore, USA",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2018"
+    },
+    {
+        "lat": 34.6937,
+        "lng": 135.5023,
+        "size": 20,
+        "color": "#d62828",
+        "label": "Osaka, Japan",
+        "home": "Kyoto, Japan",
+        "went": true,
+        "date": "2023"
+    },
+    {
+        "lat": 35.0116,
+        "lng": 135.7681,
+        "size": 20,
+        "color": "#d62828",
+        "label": "Kyoto, Japan",
+        "home": "Tokyo, Japan",
+        "went": true,
+        "date": "2023"
+    },
+    {
+        "lat": 28.5383,
+        "lng": -81.3792,
+        "size": 20,
+        "color": "#a2d2ff",
+        "label": "Orlando, USA",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2016"
+    },
+    {
+        "lat": 21.1619,
+        "lng": -86.8515,
+        "size": 20,
+        "color": "#6a994e",
+        "label": "Cancún, Mexico",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2019"
+    },
+    {
+        "lat": 9.9281,
+        "lng": -84.0907,
+        "size": 20,
+        "color": "#ca6702",
+        "label": "San José, Costa Rica",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2019"
+    },
+    {
+        "lat": 41.8057,
+        "lng": 123.4328,
+        "size": 20,
+        "color": "#e76f51",
+        "label": "Shenyang, China",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2019"
+    },
+    {
+        "lat": 29.1171,
+        "lng": 110.4792,
+        "size": 20,
+        "color": "#e76f51",
+        "label": "Zhangjiajie, China",
+        "home": "Shenyang, China",
+        "went": true,
+        "date": "2019"
+    },
+    {
+        "lat": 41.3851,
+        "lng": 2.1734,
+        "size": 20,
+        "color": "#28C2FF",
+        "label": "Barcelona, Spain",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2024"
+    },
+    {
+        "lat": 43.2965,
+        "lng": 5.3698,
+        "size": 20,
+        "color": "#28C2FF",
+        "label": "Marseille, France",
+        "home": "Barcelona, Spain",
+        "went": true,
+        "date": "2024"
+    },
+    {
+        "lat": 29.7604,
+        "lng": -95.3698,
+        "size": 20,
+        "color": "#c1121f",
+        "label": "Houston, USA",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2023"
+    },
+    {
+        "lat": 13.7563,
+        "lng": 100.5018,
+        "size": 20,
+        "color": "#fec89a",
+        "label": "Bangkok, Thailand",
+        "home": "Toronto, Canada",
+        "went": false,
+        "date": "???"
+    },
+    {
+        "lat": 34.020882,
+        "lng": -6.84165,
+        "size": 20,
+        "color": "#b56576",
+        "label": "Rabat, Morocco",
+        "home": "Toronto, Canada",
+        "went": false,
+        "date": "???"
+    },
+    {
+        "lat": 41.0082,
+        "lng": 28.9784,
+        "size": 20,
+        "color": "#8e44ad",
+        "label": "Istanbul, Turkey",
+        "home": "Toronto, Canada",
+        "went": false,
+        "date": "???"
+    },
+    {
+        "lat": 37.5665,
+        "lng": 126.978,
+        "size": 20,
+        "color": "#2ecc71",
+        "label": "Seoul, South Korea",
+        "home": "Toronto, Canada",
+        "went": false,
+        "date": "???"
+    },
+    {
+        "lat": 39.9042,
+        "lng": 116.4074,
+        "size": 20,
+        "color": "#f39c12",
+        "label": "Beijing, China",
+        "home": "Toronto, Canada",
+        "went": false,
+        "date": "???"
+    },
+    {
+        "lat": 37.9838,
+        "lng": 23.7275,
+        "size": 20,
+        "color": "#00f5d4",
+        "label": "Athens, Greece",
+        "home": "Toronto, Canada",
+        "went": false,
+        "date": "???"
+    }
+    
+]
