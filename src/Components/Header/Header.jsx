@@ -1,9 +1,7 @@
 import './Header.css'
 import "../../Components/style.css"
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 
 export default function Header() {
     const navigate = useNavigate();
@@ -12,7 +10,6 @@ export default function Header() {
         navigate('/');
         setTimeout(() => window.scrollTo(0, 900), 100);
     };
-
     return (
         <header className="header-container">
             <button className="header-text underline" onClick={() => navigate('/')}>Home</button>

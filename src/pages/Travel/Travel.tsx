@@ -142,7 +142,6 @@ export default function TravelPage() {
       world.controls().autoRotate = true;
       world.controls().autoRotateSpeed = 0.35;
 
-      // Fix 7: Add cleanup
       return () => {
         if (animationFrameRef.current) {
           cancelAnimationFrame(animationFrameRef.current);

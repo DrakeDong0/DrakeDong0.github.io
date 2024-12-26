@@ -13,7 +13,6 @@ import bg from '../../assets/bg-video.mp4';
 import uwPic from '../../assets/uw.jpg';
 import ProfilePicture from '../../assets/pfp.jpg';
 import desc_pic from '../../assets/pic1.jpg'
-import resumePDF from '../../../public/Drake_Dong_Resume.pdf'
 import LazyLoad from '../../Components/LazyLoad.jsx';
 
 import img1 from '../../assets/gallery/img1.jpg'
@@ -39,6 +38,8 @@ import img20 from '../../assets/gallery/img20.jpg'
 import img21 from '../../assets/gallery/img21.jpg'
 
 function HomeContent() {
+  const navigate = useNavigate();
+
   const [weatherData, setWeatherData] = useState({
     temp: '',
     location: '',
@@ -73,7 +74,7 @@ function HomeContent() {
         } else if ((dayNight >= 6) && (dayNight < 12)) {
           titleText = 'Good Morning.';
         } else if ((dayNight >= 12) && (dayNight < 18)) {
-          titleText = 'Good Afternoon.';
+          titleText = 'Good Afternoon.'; F
         }
 
         let weatherIcon = 'sunny';
@@ -182,20 +183,19 @@ function HomeContent() {
               <div className="options-item">A little more about myself</div><div className="options-item">→</div>
             </button>
 
-            <a href={resumePDF} download="Drake_Dong_Resume.pdf" className="options-container">
-              <div className="options-item">Resume</div><div className="options-item">→</div>
+            <a
+              href="https://drive.google.com/file/d/1iWGGroSKJCI0vIMG0TS3pJF7oxDOV_R_/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="options-container"
+            >
+              <div className="options-item">Resume</div>
+              <div className="options-item">→</div>
             </a>
 
-            {/* <button onClick={() => {
-                        const element = document.getElementById('contact-container');
-                        const topPosition = element.getBoundingClientRect().top;
-                        window.scrollBy({ 
-                          top: topPosition - 105, 
-                          behavior: 'smooth' 
-                        });
-                        }} className="options-container">
-                        <div className="options-item">Credits</div><div className="options-item">→</div>
-                      </button> */}
+            <button className="options-container" onClick={() => navigate('/Travel')}>
+              <div className="options-item">Travels</div><div className="options-item">→</div>
+            </button>
 
             <button onClick={() => {
               const element = document.getElementById('extras-container');
@@ -229,7 +229,7 @@ function AboutMe() {
         <div id="vert"></div>
         <div className="desc-text">
           <div className="travel-text">Outside of the classroom, you might find me at the gym playing pickup or holed up in my room playing Starcraft. I also love camping and traveling. I really enjoy checking out different cultures and all sorts of foods. Next up on the itinerary is J̶a̶p̶a̶n̶, C̶o̶s̶t̶a̶ R̶i̶c̶a̶, Thailand or S̶p̶a̶i̶n̶.</div>
-          <button onClick={() => navigate('/Travel')} className="travel-text">- Places I've been</button>
+          <button onClick={() => navigate('/Travel')} className="travel-link">Places I've been →</button>
         </div>
       </LazyLoad>
     </div>

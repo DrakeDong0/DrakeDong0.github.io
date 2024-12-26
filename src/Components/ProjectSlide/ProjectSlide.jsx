@@ -1,9 +1,7 @@
 import React, { useState } from 'react'; 
 
-
 function useCarousel(imageSources) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const goToNextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSources.length);
   };
