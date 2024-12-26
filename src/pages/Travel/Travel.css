@@ -8,3 +8,7 @@
     height: 92vh;
     overflow-y: hidden;
 }
+.marker-controls {
+    max-width: 800px;
+    margin: 0 auto;
+  }
