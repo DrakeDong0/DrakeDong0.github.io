@@ -17,3 +17,8 @@ https://www.flaticon.com/
 
 ## LazyLoad: 
 https://www.loginradius.com/blog/engineering/lazy-loading-in-react/ 
+
+## Globe.GL
+Globe.GL is a UI component built using Three.js/WebGL for data visualization. It has a wide variety of features, examples, and good documentation. It saved me a lot of trouble making a globe from scratch and I would highly recommend.
+
+https://globe.gl/ 
