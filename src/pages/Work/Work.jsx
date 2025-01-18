@@ -34,29 +34,28 @@ function WorkContent(){
             <div className="work-exp-container">
             <WorkExperience
                     logo={games_instutite_logo}
-                    name="The Rhetoricon Project"
-                    role="Full Stack Developer"
+                    name="UWaterloo - Games Institute"
+                    role="Full Stack Developer Intern"
                     date="Sept 2024 - Dec 2024"
                     responsibilities={[
-                        "- Led development of GoFigure, responsible for architecture, design, and implementation of new features.",
-                        "- Wrote new API endpoints using Go and developed MongoDB queries.",
-                        "- Configured, routed, and deployed project site with Docker and Portainer.",
-                        "- Developed a new database backup utility allowing updates without remigrating data.",
-                        "- Helped overhaul frontend website using React.js."
-                      ]}
+                        "- Built 15 REST APIs for client and database CRUD operations using Golang and MongoDB",
+                        "- Launched product to production with Docker, Traefik, and Portainer for containerization and routing",
+                        "- Created a backup script that enabled direct database modifications, saving the data team over 100 hours",
+                        "- Refactored over 2000 lines of frontend code using React and Tailwind",
+                    ]}
                 />
                 <WorkExperience
                     logo={silai_logo}
                     name="Silai"
-                    role="Full Stack Developer"
+                    role="Full Stack Developer Intern"
                     date="Jan 2024 - Apr 2024"
                     responsibilities={[
                         "- Built client facing web pages utilizing HTML, CSS, JavaScript, and Jinja",
-                        "- Engineered and integrated a backend database using MySQL.",
+                        "- Engineered and integrated a backend database using MySQL",
                         "- Designed new REST API endpoints using Flask",
-                        "- Deployed applications to AWS Beanstalk and managed databases on AWS RDS.",
-                        "- Developed a gyroscope verification tool with TensorFlow to validate camera input data accuracy."
-                      ]}
+                        "- Deployed applications to AWS Beanstalk and managed databases on AWS RDS",
+                        "- Developed a gyroscope verification tool with TensorFlow to validate camera input data accuracy"
+                    ]}
                 />
             </div>
         </div>
