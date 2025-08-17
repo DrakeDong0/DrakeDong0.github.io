@@ -8,11 +8,11 @@ import "../../pages/Homepage/text-animation.css";
 
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer"
-import bg from '../../assets/bg-video.mp4';
+import bg from '../../assets/homepage/bg-video.mp4';
 
-import uwPic from '../../assets/uw.jpg';
-import ProfilePicture from '../../assets/pfp.jpg';
-import desc_pic from '../../assets/pic1.jpg'
+import uwPic from '../../assets/homepage/uw.jpg';
+import ProfilePicture from '../../assets/homepage/pfp.jpg';
+import desc_pic from '../../assets/homepage/pic1.jpg'
 import LazyLoad from '../../Components/LazyLoad.jsx';
 
 import img1 from '../../assets/gallery/img1.jpg'
@@ -49,7 +49,7 @@ function HomeContent() {
 
 
   const fetchWeatherData = () => {
-    const apiKey = 'ec85b7a569f34ea38ce211649240902';
+    const apiKey = '0439119a2a2541c19c0211936251708';
     const query = 'Toronto, Ontario';
     const aqi = 'no';
 
@@ -74,7 +74,7 @@ function HomeContent() {
         } else if ((dayNight >= 6) && (dayNight < 12)) {
           titleText = 'Good Morning.';
         } else if ((dayNight >= 12) && (dayNight < 18)) {
-          titleText = 'Good Afternoon.'; F
+          titleText = 'Good Afternoon.';
         }
 
         let weatherIcon = 'sunny';

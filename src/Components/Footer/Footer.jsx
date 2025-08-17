@@ -16,7 +16,7 @@ export default function Footer() {
             <a href="https://github.com/DrakeDong0" aria-label="Github URL" target="_blank" className="fa-brands fa-github"></a>
             <a href="https://www.linkedin.com/in/drakedong/" aria-label="Linkedin URL" target="_blank" className="fa-brands fa-linkedin"></a>
             <a href="mailto: drakewdong@gmail.com" aria-label="Email URL" target="_blank" className="fa-regular fa-envelope"></a>
-            <a href="https://drive.google.com/file/d/1crV5W1GzM_PQBWd40xSFtjCY9rHK9Af_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="fa-regular fa-file" aria-label="Resume Download"></a>
+            <a href="https://drive.google.com/file/d/1m08C2Du4MHr3_HtIrSSncRo9UzUedJWC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="fa-regular fa-file" aria-label="Resume Download"></a>
           </div>
         </LazyLoad>
       </div>

@@ -1,9 +1,15 @@
 import React from 'react';
+import "./WorkSlide.css";
+
 
 function WorkExperience({ logo, name, role, date, responsibilities }) {
-  return ( 
+  return (
     <div className="work-exp">
-      <img className="company_logo" src={logo} alt={name} />
+      <img
+        src={logo}
+        alt={name}
+        className="image"
+      />
       <div className="work-text">
         <div className="top-row">
           <div id="work-name">{name}</div>

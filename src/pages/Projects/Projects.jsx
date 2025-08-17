@@ -9,7 +9,7 @@ import ProjectSlide from '../../Components/ProjectSlide/ProjectSlide';
 
 import smartnose from '../../assets/project-imgs/smartnose/smartnose.png';
 import smartnoseDG from '../../assets/project-imgs/smartnose/smartnose-diagram.png';
-import stm32 from '../../assets/stm32.png';
+import stm32 from '../../assets/project-imgs/stm32.png';
 import website1 from '../../assets/project-imgs/website_new/website1.png'
 import website2 from '../../assets/project-imgs/website_new/website2.png'
 import uploadify1 from '../../assets/project-imgs/uploadify/uploadify1.png'
@@ -29,7 +29,7 @@ import uploadify12 from '../../assets/project-imgs/uploadify/uploadify12.png'
 import doorbot1 from '../../assets/project-imgs/doorbot/doorbot1.jpg'
 import doorbot2 from '../../assets/project-imgs/doorbot/doorbot2.jpg'
 import websiteold from '../../assets/project-imgs/oldwebsite/oldwebsite.png'
-import wip from '../../assets/wip.png'
+import wip from '../../assets/project-imgs/wip.jpg'
 import freq from '../../assets/project-imgs/wsb/freq.png'
 import nvda from '../../assets/project-imgs/wsb/nvda.png'
 import nvda_real from '../../assets/project-imgs/wsb/nvda_real.png'
@@ -58,18 +58,28 @@ function ProjectsContent() {
                 <a target="_blank" href="https://html.spec.whatwg.org/"><img className="tech-img" alt-text="HTML icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></a>
                 <a target="_blank" href="https://www.w3.org/Style/CSS/"><img className="tech-img" alt-text="CSS icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></a>
                 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img className="tech-img" alt-text="Javascript icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></a>
-                <a target="_blank" href="https://www.arduino.cc/"><img className="tech-img" alt-text="arduino icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" /></a>
                 <a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/"><img className="tech-img" alt-text="Flask icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" /></a>
                 <a target="_blank" href="https://git-scm.com/"><img className="tech-img" alt-text="Git icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></a>
-                <a target="_blank" href="https://www.djangoproject.com/"><img className="tech-img" alt-text="Django icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" /></a>
                 <a target="_blank" href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html"><img className="tech-img stm32" alt-text="STM32 icon" src={stm32} /></a>
-                <a target="_blank" href="https://jekyllrb.com/"><img className="tech-img" alt-text="Jekyll icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jekyll/jekyll-original-wordmark.svg" /></a>
-                <a target="_blank" href="https://code.visualstudio.com/"><img className="tech-img" alt-text="VScode icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></a>
                 <a target="_blank" href="https://react.dev/"><img className="tech-img" alt-text="Reactjs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
                 <a target="_blank" href="https://vitejs.dev/"><img className="tech-img" alt-text="Vitejs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" /></a>
-                <a target="_blank" href="https://opencv.org/"><img className="tech-img" alt-text="OpenCV icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" /></a>
+                <a target="_blank" href="https://go.dev/"><img className="tech-img" alt-text="Golang icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" /></a>
+                <a target="_blank" href="https://www.mongodb.com/"><img className="tech-img" alt-text="Mongodb icon" src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" /></a>
 
             </div>
+            <ProjectSlide
+                images={wipCarousel}
+                title="BlueTrinket"
+                date="Jul 2025"
+                description={[
+                    "Working on a fog-of-war app hopefully done by the end of the year...",
+                    "First project in mobile/app development! More to come."
+                ]}
+                skills={[
+                    { name: "Go", level: 10 }, { name: "Swift", level: 7 }, { name: "MongoDB", level: 8 }
+                ]}
+                sourceLink="https://github.com/DrakeDong0/BlueTrinket"
+            />
             <ProjectSlide
                 images={wsb}
                 title="Inverse r/WallStreetBets Trader"
