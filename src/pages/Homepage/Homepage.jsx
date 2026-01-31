@@ -169,7 +169,7 @@ function HomeContent() {
           <div class="typewriter">
             <h1>Hi! My name is Drake.</h1>
           </div>
-          <div className="text">I'm a Second year Computer Engineering student at the University of Waterloo.</div>
+          <div className="text">I'm a third year Computer Engineering student at the University of Waterloo.</div>
           <div className="options">
 
             <button onClick={() => {

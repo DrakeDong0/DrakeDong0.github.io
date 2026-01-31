@@ -140,6 +140,46 @@
         "date": "2023"
     },
     {
+        "lat": 38.7223,
+        "lng": -9.1393,
+        "size": 20,
+        "color": "#02821d",
+        "label": "Lisbon, Portugal",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2026"
+    },
+    {
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "size": 20,
+        "color": "#02821d",
+        "label": "Porto, Portugal",
+        "home": "Lisbon, Portugal",
+        "went": true,
+        "date": "2026"
+    },
+    {
+        "lat": 32.6669,
+        "lng": -16.9241,
+        "size": 20,
+        "color": "#02821d",
+        "label": "Funchal, Madeira",
+        "home": "Lisbon, Portugal",
+        "went": true,
+        "date": "2026"
+    },
+    {
+        "lat": 36.0190,
+        "lng": 129.3435,
+        "size": 20,
+        "color": "#bb35ea",
+        "label": "Pohang, South Korea",
+        "home": "Toronto, Canada",
+        "went": true,
+        "date": "2026"
+    },
+    {
         "lat": 13.7563,
         "lng": 100.5018,
         "size": 20,

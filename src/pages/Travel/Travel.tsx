@@ -31,7 +31,11 @@ const markerSvg = `<svg viewBox="-4 0 36 36">
     'Zhangjiajie, China': { lat: 29.1171, lng: 110.4792 },
     'Barcelona, Spain': { lat: 41.3851, lng: 2.1734 },
     'Marseille, France': { lat: 43.2965, lng: 5.3698 },
-    'Houston, USA': { lat: 29.7604, lng: -95.3698 }
+    'Houston, USA': { lat: 29.7604, lng: -95.3698 },
+    'Lisbon, Portugal': { lat: 38.7223, lng: -9.1393 },
+    'Porto, Portugal': { lat: 41.1579, lng: -8.6291 },
+    'Funchal, Madeira': { lat: 32.6669, lng: -16.9241 },
+    'Pohang, South Korea': { lat: 36.0190, lng: 129.3435 },
 };
 
 const generateArcsData = (markers) => {
