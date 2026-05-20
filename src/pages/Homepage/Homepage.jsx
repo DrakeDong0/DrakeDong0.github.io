@@ -36,6 +36,10 @@ import img18 from '../../assets/gallery/img18.jpg'
 import img19 from '../../assets/gallery/img19.jpg'
 import img20 from '../../assets/gallery/img20.jpg'
 import img21 from '../../assets/gallery/img21.jpg'
+import img22 from '../../assets/gallery/img22.jpg'
+import img23 from '../../assets/gallery/img23.jpg'
+import img24 from '../../assets/gallery/img24.jpg'
+import img25 from '../../assets/gallery/img25.jpg'
 
 function HomeContent() {
   const navigate = useNavigate();
@@ -262,6 +266,7 @@ function Extras() {
           <div><img className="gallery-img" src={img8}></img></div>
           <div><img className="gallery-img" src={img15}></img></div>
           <div><img className="gallery-img" src={img21}></img></div>
+          <div><img className="gallery-img" src={img22}></img></div>
         </div>
         <div id="column">
           <div><img className="gallery-img" src={img4}></img></div>
@@ -269,6 +274,7 @@ function Extras() {
           <div><img className="gallery-img" src={img6}></img></div>
           <div><img className="gallery-img" src={img14}></img></div>
           <div><img className="gallery-img" src={img18}></img></div>
+          <div><img className="gallery-img" src={img23}></img></div>
         </div>
         <div id="column">
           <div><img className="gallery-img" src={img3}></img></div>
@@ -277,6 +283,7 @@ function Extras() {
           <div><img className="gallery-img" src={img2}></img></div>
           <div><img className="gallery-img" src={img19}></img></div>
           <div><img className="gallery-img" src={img17}></img></div>
+          <div><img className="gallery-img" src={img24}></img></div>
         </div>
         <div id="column">
           <div><img className="gallery-img" src={img10}></img></div>
@@ -284,6 +291,7 @@ function Extras() {
           <div><img className="gallery-img" src={img12}></img></div>
           <div><img className="gallery-img" src={img16}></img></div>
           <div><img className="gallery-img" src={img20}></img></div>
+          <div><img className="gallery-img" src={img25}></img></div>
         </div>
       </div>
 
