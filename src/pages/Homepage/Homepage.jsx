@@ -52,77 +52,66 @@ function HomeContent() {
   });
 
 
-  const fetchWeatherData = () => {
-    const apiKey = '0439119a2a2541c19c0211936251708';
-    const query = 'Toronto, Ontario';
-    const aqi = 'no';
-
-    fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=${aqi}`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        const weatherState = data.current.condition.text.toLowerCase();
-        const currentTime = data.location.localtime;
-        const dayNight = parseInt(currentTime.substring(currentTime.indexOf(" ") + 1, currentTime.lastIndexOf(":")), 10);
-        const tempC = data.current.temp_c;
-        const city = data.location.name;
-        const province = data.location.region;
-
-        let titleText = 'Good Day.';
-        if ((dayNight >= 18) || (dayNight <= 5)) {
-          titleText = 'Good Evening.';
-        } else if ((dayNight >= 6) && (dayNight < 12)) {
-          titleText = 'Good Morning.';
-        } else if ((dayNight >= 12) && (dayNight < 18)) {
-          titleText = 'Good Afternoon.';
-        }
-
-        let weatherIcon = 'sunny';
-        if ((dayNight >= 18) || (dayNight <= 5)) {
-          weatherIcon = 'nights_stay';
-        } else {
-          if (weatherState.includes("rain") || weatherState === "thunderstorm") {
-            weatherIcon = 'rainy';
-          } else if (weatherState.includes("snow")) {
-            weatherIcon = 'weather_snowy';
-          } else if (weatherState === "clear" || weatherState === "sunny") {
-            weatherIcon = 'sunny';
-          } else if (weatherState.includes("cloud") || weatherState === "overcast") {
-            weatherIcon = 'cloud';
-          }
-        }
-
-        setWeatherData({
-          temp: `${tempC}°C`,
-          location: `${city}, ${province}`,
-          titleText,
-          weatherIcon
-        });
-      })
-      .catch(error => {
-        console.error('Error making the API request:', error);
-      });
-  };
-
   useEffect(() => {
+    const fetchWeatherData = () => {
+      const apiKey = '0439119a2a2541c19c0211936251708';
+      const query = 'Toronto, Ontario';
+      const aqi = 'no';
+
+      fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=${aqi}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const weatherState = data.current.condition.text.toLowerCase();
+          const currentTime = data.location.localtime;
+          const dayNight = parseInt(currentTime.substring(currentTime.indexOf(" ") + 1, currentTime.lastIndexOf(":")), 10);
+          const tempC = data.current.temp_c;
+          const city = data.location.name;
+          const province = data.location.region;
+
+          let titleText = 'Good Day.';
+          if ((dayNight >= 18) || (dayNight <= 5)) {
+            titleText = 'Good Evening.';
+          } else if ((dayNight >= 6) && (dayNight < 12)) {
+            titleText = 'Good Morning.';
+          } else if ((dayNight >= 12) && (dayNight < 18)) {
+            titleText = 'Good Afternoon.';
+          }
+
+          let weatherIcon = 'sunny';
+          if ((dayNight >= 18) || (dayNight <= 5)) {
+            weatherIcon = 'nights_stay';
+          } else {
+            if (weatherState.includes("rain") || weatherState === "thunderstorm") {
+              weatherIcon = 'rainy';
+            } else if (weatherState.includes("snow")) {
+              weatherIcon = 'weather_snowy';
+            } else if (weatherState === "clear" || weatherState === "sunny") {
+              weatherIcon = 'sunny';
+            } else if (weatherState.includes("cloud") || weatherState === "overcast") {
+              weatherIcon = 'cloud';
+            }
+          }
+
+          setWeatherData({
+            temp: `${tempC}°C`,
+            location: `${city}, ${province}`,
+            titleText,
+            weatherIcon
+          });
+        })
+        .catch(error => {
+          console.error('Error making the API request:', error);
+        });
+    };
+
     fetchWeatherData();
     const intervalId = setInterval(fetchWeatherData, 600000);
     return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    const handleClick = () => {
-      const section = document.querySelector('#about-me');
-      section.scrollIntoView({ behavior: 'smooth' });
-    };
-    const downArrowElement = document.getElementById('down-arrow');
-    downArrowElement.addEventListener('click', handleClick);
-
-    return () => downArrowElement.removeEventListener('click', handleClick);
   }, []);
 
   useEffect(() => {
@@ -138,14 +127,14 @@ function HomeContent() {
   return (
     <div className="container">
       <div id="black-cover"></div>
-      <div class="op-container">
-        <div class="box">
-          <div class="title">
-            <span class="block"></span>
+      <div className="op-container">
+        <div className="box">
+          <div className="title">
+            <span className="block"></span>
             <h1 className="linear-color">{weatherData.titleText}</h1>
           </div>
-          <div class="role">
-            <div class="block"></div>
+          <div className="role">
+            <div className="block"></div>
             <p>It's nice to meet you.</p>
           </div>
         </div>
@@ -161,8 +150,8 @@ function HomeContent() {
           <source src={bg} type="video/mp4" />
         </video>
       </div>
-      <button>
-        <span class="material-symbols-outlined" id="down-arrow">
+      <button onClick={() => document.querySelector('#about-me')?.scrollIntoView({ behavior: 'smooth' })}>
+        <span className="material-symbols-outlined" id="down-arrow">
           keyboard_arrow_down
         </span>
       </button>
@@ -170,7 +159,7 @@ function HomeContent() {
       <LazyLoad className="profile-container fadeBot">
         <img id="pfp" src={ProfilePicture} alt='Drake profile picture'></img>
         <div className="title-container">
-          <div class="typewriter">
+          <div className="typewriter">
             <h1>Hi! My name is Drake.</h1>
           </div>
           <div className="text">I'm a third year Computer Engineering student at the University of Waterloo.</div>
@@ -239,23 +228,7 @@ function AboutMe() {
     </div>
   );
 }
-// function Credit(){
-//   return(
-//     <div id="contact-container" className="section-container">
-//       <LazyLoad className="title-text fadeBot">Credits</LazyLoad>
-//       <div className="credits-container">
-//         <LazyLoad className="desc-text fadeBot">This website was made using ReactJS + Vite. Huge thanks to Vickey Zhou for drawing, and XXXXXXX for animating the art on the home screen!</LazyLoad>
-//         <LazyLoad className="links-container fadeBot">
-//             <a className="credit-link" href="https://github.com/DrakeDong0/DrakeDong0.github.io/blob/main/README.md" target="_blank">Resources Used</a>
-//             <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out Vickey's work</a>
-//             {/* <a className="credit-link"href="https://www.youtube.com/" target="_blank">Check out XXXXXX's work</a> */}
-//         </LazyLoad>
-//       </div>
-//     </div>
-//   );
-// }
 function Extras() {
-  const images = import.meta.glob('../../assets/gallery/*.jpg');
   return (
     <div id="extras-container" className="section-container">
       <LazyLoad className="title-text fadeBot">Extras</LazyLoad>

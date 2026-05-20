@@ -12,10 +12,10 @@ function WorkExperience({ logo, name, role, date, responsibilities }) {
       />
       <div className="work-text">
         <div className="top-row">
-          <div id="work-name">{name}</div>
+          <div className="work-name">{name}</div>
         </div>
-        <div id="work-role">{role}</div>
-        <div id="work-date">{date}</div>
+        <div className="work-role">{role}</div>
+        <div className="work-date">{date}</div>
         <div className="work-content">
           {responsibilities.map((item, index) => (
             <p key={index}>{item}</p>

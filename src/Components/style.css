@@ -72,16 +72,26 @@ a {
     text-decoration: none;
 }
 .typewriter h1 {
-    overflow: hidden; 
-    border-right: .15em solid orange; 
-    white-space: nowrap; 
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
     font-family: 'Quicksand', sans-serif;
-    font-size: 2.4vw;
-    letter-spacing: .10em; 
-    animation: 
+    font-size: clamp(18px, 2.4vw, 48px);
+    letter-spacing: .10em;
+    animation:
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
+
+@media (max-width: 768px) {
+  .typewriter h1 {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    font-size: clamp(18px, 5.5vw, 28px);
+    letter-spacing: 0.05em;
+  }
+}
 .section-title{
     font-size: clamp(50px, 3vw, 60px);
     width: 100%;

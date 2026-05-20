@@ -28,15 +28,15 @@ const Project = ({ images, title, date, description, skills, sourceLink }) => {
     <div className="project fade">
       <div className="project-text">
         <div className="top-bar">
-          <div id="project-name">{title}</div>
-          <div id="skills-container">
+          <div className="project-name">{title}</div>
+          <div className="skills-container">
             {skills.map((skill, index) => (
               <div key={index} className={`skill-bubble s${skill.level}`}>{skill.name}</div>
             ))}
           </div>
         </div>
-        <div id="project-date">{`${date}`}</div>
-        <div id="project-desc-container">
+        <div className="project-date">{date}</div>
+        <div className="project-desc-container">
           {description.map((paragraph, index) => (
             <React.Fragment key={index}>
               <div>{paragraph}</div>

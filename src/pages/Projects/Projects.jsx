@@ -51,20 +51,20 @@ function ProjectsContent() {
         <div className="projects-container">
             <LazyLoad className="section-title fadeBot">Projects</LazyLoad>
             <div className="tech-bar">
-                <a target="_blank" href="https://docs.oracle.com/en/java/"><img className="tech-img" alt-text="java icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /></a>
-                <a target="_blank" href="https://devdocs.io/cpp/"><img className="tech-img" alt-text="C++ icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" /></a>
-                <a target="_blank" href="https://www.python.org"><img className="tech-img" alt-text="Python icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /></a>
-                <a target="_blank" href="https://devdocs.io/c/"><img className="tech-img" alt-text="C icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" /></a>
-                <a target="_blank" href="https://html.spec.whatwg.org/"><img className="tech-img" alt-text="HTML icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></a>
-                <a target="_blank" href="https://www.w3.org/Style/CSS/"><img className="tech-img" alt-text="CSS icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></a>
-                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img className="tech-img" alt-text="Javascript icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></a>
-                <a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/"><img className="tech-img" alt-text="Flask icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" /></a>
-                <a target="_blank" href="https://git-scm.com/"><img className="tech-img" alt-text="Git icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></a>
-                <a target="_blank" href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html"><img className="tech-img stm32" alt-text="STM32 icon" src={stm32} /></a>
-                <a target="_blank" href="https://react.dev/"><img className="tech-img" alt-text="Reactjs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
-                <a target="_blank" href="https://vitejs.dev/"><img className="tech-img" alt-text="Vitejs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" /></a>
-                <a target="_blank" href="https://go.dev/"><img className="tech-img" alt-text="Golang icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" /></a>
-                <a target="_blank" href="https://www.mongodb.com/"><img className="tech-img" alt-text="Mongodb icon" src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" /></a>
+                <a target="_blank" href="https://docs.oracle.com/en/java/"><img className="tech-img" alt="java icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /></a>
+                <a target="_blank" href="https://devdocs.io/cpp/"><img className="tech-img" alt="C++ icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" /></a>
+                <a target="_blank" href="https://www.python.org"><img className="tech-img" alt="Python icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /></a>
+                <a target="_blank" href="https://devdocs.io/c/"><img className="tech-img" alt="C icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" /></a>
+                <a target="_blank" href="https://html.spec.whatwg.org/"><img className="tech-img" alt="HTML icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></a>
+                <a target="_blank" href="https://www.w3.org/Style/CSS/"><img className="tech-img" alt="CSS icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></a>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img className="tech-img" alt="Javascript icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></a>
+                <a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/"><img className="tech-img" alt="Flask icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" /></a>
+                <a target="_blank" href="https://git-scm.com/"><img className="tech-img" alt="Git icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></a>
+                <a target="_blank" href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html"><img className="tech-img stm32" alt="STM32 icon" src={stm32} /></a>
+                <a target="_blank" href="https://react.dev/"><img className="tech-img" alt="Reactjs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
+                <a target="_blank" href="https://vitejs.dev/"><img className="tech-img" alt="Vitejs icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" /></a>
+                <a target="_blank" href="https://go.dev/"><img className="tech-img" alt="Golang icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" /></a>
+                <a target="_blank" href="https://www.mongodb.com/"><img className="tech-img" alt="Mongodb icon" src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" /></a>
 
             </div>
             <ProjectSlide
@@ -104,7 +104,7 @@ function ProjectsContent() {
                 skills={[
                     { name: "Python", level: 6 },
                 ]}
-                sourceLink="https://github.com/DrakeDong0/trader"
+                sourceLink="https://github.com/DrakeDong0/Eye-Tracker"
             />
             <ProjectSlide
                 images={website_newCarousel}
@@ -221,12 +221,12 @@ function ProjectsContent() {
     );
 }
 
-export default function () {
+export default function ProjectPage() {
     return (
         <>
-            <ProjectsContent></ProjectsContent>
-            <Header></Header>
-            <Footer></Footer>
+            <ProjectsContent />
+            <Header />
+            <Footer />
         </>
     );
 }

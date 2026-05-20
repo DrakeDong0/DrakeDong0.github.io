@@ -17,22 +17,22 @@ function WorkContent() {
         <div className="work-container">
             <LazyLoad className="section-title fadeBot">Work Experience</LazyLoad>
             <div className="tech-bar">
-                <a target="_blank" href="https://www.python.org"><img className="tech-img" alt-text="Python icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /></a>
-                <a target="_blank" href="https://html.spec.whatwg.org/"><img className="tech-img" alt-text="HTML icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></a>
-                <a target="_blank" href="https://www.w3.org/Style/CSS/"><img className="tech-img" alt-text="CSS icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></a>
-                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img className="tech-img" alt-text="Javascript icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></a>
-                <a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/"><img className="tech-img" alt-text="Flask icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" /></a>
-                <a target="_blank" href="https://git-scm.com/"><img className="tech-img" alt-text="Git icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></a>
-                <a target="_blank" href="https://code.visualstudio.com/"><img className="tech-img" alt-text="VScode icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></a>
-                <a target="_blank" href="https://www.figma.com/"><img className="tech-img" alt-text="Figma icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" /></a>
-                <a target="_blank" href="https://www.mysql.com/"><img className="tech-img" alt-text="Mysql icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" /></a>
-                <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/"><img className="tech-img" alt-text="AWS Beanstalk icon" src={aws} /></a>
-                <a target="_blank" href="https://www.mongodb.com/"><img className="tech-img" alt-text="Mongodb icon" src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" /></a>
-                <a target="_blank" href="https://go.dev/"><img className="tech-img" alt-text="Golang icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" /></a>
-                <a target="_blank" href="https://www.docker.com/"><img className="tech-img" alt-text="Docker icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" /></a>
-                <a target="_blank" href="https://www.portainer.io/"><img className="tech-img" alt-text="Portainer icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original.svg" /></a>
-                <a target="_blank" href="https://vuejs.org/"><img className="tech-img" alt-text="Vue icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" /></a>
-                <a target="_blank" href="https://kubernetes.io/"><img className="tech-img" alt-text="K8 icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" /></a>
+                <a target="_blank" href="https://www.python.org"><img className="tech-img" alt="Python icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /></a>
+                <a target="_blank" href="https://html.spec.whatwg.org/"><img className="tech-img" alt="HTML icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></a>
+                <a target="_blank" href="https://www.w3.org/Style/CSS/"><img className="tech-img" alt="CSS icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></a>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img className="tech-img" alt="Javascript icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></a>
+                <a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/"><img className="tech-img" alt="Flask icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" /></a>
+                <a target="_blank" href="https://git-scm.com/"><img className="tech-img" alt="Git icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /></a>
+                <a target="_blank" href="https://code.visualstudio.com/"><img className="tech-img" alt="VScode icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /></a>
+                <a target="_blank" href="https://www.figma.com/"><img className="tech-img" alt="Figma icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" /></a>
+                <a target="_blank" href="https://www.mysql.com/"><img className="tech-img" alt="Mysql icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" /></a>
+                <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/"><img className="tech-img" alt="AWS Beanstalk icon" src={aws} /></a>
+                <a target="_blank" href="https://www.mongodb.com/"><img className="tech-img" alt="Mongodb icon" src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" /></a>
+                <a target="_blank" href="https://go.dev/"><img className="tech-img" alt="Golang icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" /></a>
+                <a target="_blank" href="https://www.docker.com/"><img className="tech-img" alt="Docker icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" /></a>
+                <a target="_blank" href="https://www.portainer.io/"><img className="tech-img" alt="Portainer icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original.svg" /></a>
+                <a target="_blank" href="https://vuejs.org/"><img className="tech-img" alt="Vue icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" /></a>
+                <a target="_blank" href="https://kubernetes.io/"><img className="tech-img" alt="K8 icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" /></a>
             </div>
             <div className="work-exp-container">
                 <WorkExperience
@@ -77,12 +77,12 @@ function WorkContent() {
     );
 }
 
-export default function () {
+export default function WorkPage() {
     return (
         <>
-            <WorkContent></WorkContent>
-            <Header></Header>
-            <Footer></Footer>
+            <WorkContent />
+            <Header />
+            <Footer />
         </>
     );
 }

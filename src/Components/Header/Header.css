@@ -44,6 +44,21 @@
     .footer-container{
         height:25vw !important;
     }
+}
+
+@media (max-width: 768px) {
+  .header-items {
+    gap: 0;
+  }
+
+  .underline {
+    font-size: 14px;
+    padding: 8px 6px;
+  }
+
+  .invisblock {
+    display: none;
+  }
 }.underline {
     position: relative;
     overflow: hidden; 

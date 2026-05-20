@@ -44,16 +44,16 @@
     margin-left: 90px;
 }
 
-#work-name, .arrow{
+.work-name, .arrow{
     color:orange;
     font-family: 'Quicksand', sans-serif;
     font-size: 2.3vw;
 }
-#work-role{
+.work-role{
     margin-top: 10px;
     font-style: italic;
 }
-#work-date{
+.work-date{
     margin-top: 10px;
     color: rgba(255,255,255,0.6);
 }
@@ -64,4 +64,50 @@
 }
 .top-row{
     display:flex;
+}
+
+@media (max-width: 768px) {
+  .work-exp {
+    flex-direction: column;
+    width: 95vw;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .work-text {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .work-name, .arrow {
+    font-size: clamp(18px, 5vw, 26px);
+  }
+
+  .work-role {
+    font-size: clamp(14px, 3.5vw, 18px);
+  }
+
+  .work-date {
+    font-size: clamp(12px, 3vw, 16px);
+  }
+
+  .work-content {
+    line-height: 1.6;
+    font-size: clamp(13px, 3vw, 16px);
+  }
+
+  .tech-bar {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .tech-img {
+    width: 7vw;
+    height: 7vw;
+    min-width: 24px;
+    min-height: 24px;
+  }
 }

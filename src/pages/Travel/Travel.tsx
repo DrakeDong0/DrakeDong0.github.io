@@ -83,8 +83,9 @@ export default function TravelPage() {
         el.style.width = `${d.size}px`;
         el.style['pointer-events'] = 'auto';
         el.style.cursor = 'pointer';
+        let tooltip: HTMLDivElement | null = null;
         el.addEventListener('mouseenter', () => {
-          const tooltip = document.createElement('div');
+          tooltip = document.createElement('div');
           tooltip.style.position = 'absolute';
           tooltip.style.bottom = '20px';
           tooltip.style.right = '20px';
@@ -94,14 +95,15 @@ export default function TravelPage() {
           tooltip.style.padding = '20px';
           tooltip.style.borderRadius = '3px';
           tooltip.style.pointerEvents = 'none';
-        
+
           const label = document.createElement('div');
           label.textContent = d.label + " | " + d.date;
           tooltip.appendChild(label);
           document.body.appendChild(tooltip);
-          el.addEventListener('mouseleave', () => {
-            tooltip.remove();
-          });
+        });
+        el.addEventListener('mouseleave', () => {
+          tooltip?.remove();
+          tooltip = null;
         });
     
         return el;

@@ -48,12 +48,33 @@ a:hover {
     color: rgba(255,255,255, 0.7);
 }
 
-@media (max-aspect-ratio: 1/0.7) {
-    .footer-container{
-        height:25vw !important;
-    }
-    .footer-content2,
-    .footer-content3{
-        width: 35%;
-    }
+@media (max-width: 768px) {
+  .footer-bg {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content1 {
+    width: 80%;
+    align-items: center;
+  }
+
+  .footer-content2 {
+    width: 60%;
+    justify-content: center;
+    font-size: clamp(20px, 6vw, 30px);
+    gap: 8%;
+  }
+
+  #vert-line {
+    display: none;
+  }
 }

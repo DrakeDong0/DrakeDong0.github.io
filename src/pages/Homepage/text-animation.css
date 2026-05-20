@@ -8,7 +8,7 @@
   align-items: center;
 
   .box {
-    width: 550;
+    width: 550px;
     height: 200px;
     overflow-y: hidden;
     position: relative;
@@ -68,7 +68,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      height: 2vw;
+      height: clamp(24px, 2vw, 40px);
       margin-top: -10px;
       overflow-y: hidden;
 
@@ -257,5 +257,23 @@ footer {
   100% {
     opacity: 1;
      bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .op-container .box {
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+  }
+
+  .op-container .box .title {
+    height: auto;
+    overflow: visible;
+  }
+
+  .op-container .box .role {
+    height: auto;
+    overflow: visible;
   }
 }

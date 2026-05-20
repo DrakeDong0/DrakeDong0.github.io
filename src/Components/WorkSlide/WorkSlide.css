@@ -20,17 +20,17 @@
   min-width: 250px;
 }
 
-#work-name {
+.work-name {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-#work-role {
+.work-role {
   font-size: 1.2rem;
   margin-top: 5px;
 }
 
-#work-date {
+.work-date {
   font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
@@ -52,12 +52,12 @@
     max-width: 80%;
   }
 
-  #work-name {
+  .work-name {
     font-size: 1.3rem;
     text-align: center;
   }
 
-  #work-role, #work-date {
+  .work-role, .work-date {
     text-align: center;
   }
 
