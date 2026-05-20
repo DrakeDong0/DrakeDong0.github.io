@@ -25,8 +25,8 @@
 }
 .work-exp{
     display:flex;
-    width: 80vw;
-    padding:50px;
+    width: 90vw;
+    padding: 30px 20px;
 }
 .work-exp-container{
     display:flex;
@@ -41,7 +41,7 @@
 .work-text{
     display:flex;
     flex-direction:column;
-    margin-left: 90px;
+    margin-left: 40px;
 }
 
 .work-name, .arrow{

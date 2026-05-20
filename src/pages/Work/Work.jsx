@@ -10,6 +10,7 @@ import aws from '../../assets/workpage/beanstalk.png';
 import silai_logo from '../../assets/work_logos/silai_logo.png';
 import games_instutite_logo from '../../assets/work_logos/games_instutite_logo.png';
 import emailgistics_logo from '../../assets/work_logos/emailgistics_logo.jpg';
+import super_logo from '../../assets/work_logos/super_logo.jpg';
 
 
 function WorkContent() {
@@ -33,8 +34,25 @@ function WorkContent() {
                 <a target="_blank" href="https://www.portainer.io/"><img className="tech-img" alt="Portainer icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original.svg" /></a>
                 <a target="_blank" href="https://vuejs.org/"><img className="tech-img" alt="Vue icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" /></a>
                 <a target="_blank" href="https://kubernetes.io/"><img className="tech-img" alt="K8 icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" /></a>
+                <a target="_blank" href="https://kafka.apache.org/"><img className="tech-img" alt="Kafka icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" /></a>
+                <a target="_blank" href="https://redis.io/"><img className="tech-img" alt="Redis icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" /></a>
             </div>
             <div className="work-exp-container">
+                <WorkExperience
+                    logo={super_logo}
+                    name="Super.com"
+                    role="Software Engineer Intern"
+                    date="Jan 2026 - Apr 2026"
+                    responsibilities={[
+                        "- Automated ETL workflows to ingest Amplitude Experiment data into Snowflake and published A/B testing results; modeled and implemented event-focused DDTracing to monitor feature rollouts",
+                        "- Developed Kafka consumer service to process and route analytic events to various third-party platforms",
+                        "- Refactored legacy in-memory registry caches into Redis for better scalability and visibility",
+                        "- Implemented backend consumer event sampling to reduce Amplitude ingestion, saving $40K annually",
+                        "- Consolidated and incrementalized scheduled dbt models to increase efficiency by 97%",
+                        "- Designed amenities taxonomy and mapped third-party data into a unified schema; built supporting data models and internal tooling for filtering and downstream management",
+                        "- Authored automated UTM URL generator to standardize campaign tracking for the marketing department",
+                    ]}
+                />
                 <WorkExperience
                     logo={emailgistics_logo}
                     name="Emailgistics"
