@@ -229,9 +229,6 @@ export default function Photography() {
 
   const activeTab = useMemo(() => TABS.find(t => t.id === gallery), [gallery]);
 
-  if (!gallery) return <Navigate to="/Photography/portugal" replace />;
-  if (!activeTab) return <Navigate to="/Photography/portugal" replace />;
-
   const flatPhotos = useMemo(() =>
     activeTab?.rows?.flatMap(row =>
       row.photos.map(p => ({ ...p, orientation: row.type === 'landscape' ? 'landscape' : row.type === 'square' ? 'square' : 'portrait' }))
@@ -244,12 +241,13 @@ export default function Photography() {
   const onPrev  = useCallback(() => setLightboxIndex(i => (i - 1 + flatPhotos.length) % flatPhotos.length), [flatPhotos.length]);
   const onNext  = useCallback(() => setLightboxIndex(i => (i + 1) % flatPhotos.length), [flatPhotos.length]);
 
-  // Build flat index map: photo id → flat index
   const flatIndexMap = useMemo(() => {
     const map = {};
     flatPhotos.forEach((p, i) => { map[p.id] = i; });
     return map;
   }, [flatPhotos]);
+
+  if (!gallery || !activeTab) return <Navigate to="/Photography/portugal" replace />;
 
   return (
     <div className="pg-root">
