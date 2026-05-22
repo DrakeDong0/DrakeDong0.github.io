@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage/Homepage'
 import ProjectPage from './pages/Projects/Projects'
 import Work from './pages/Work/Work'
 import TravelPage from './pages/Travel/Travel'
+import Photography from './pages/Photography/Photography'
 
 import './index.css'
 
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='/Projects' element={<ProjectPage />}></Route>
         <Route path='/Work' element={<Work />}></Route>
         <Route path='/Travel' element={<TravelPage />}></Route>
+        <Route path='/Photography' element={<Photography />}></Route>
       </Routes>
     </BrowserRouter>
   );

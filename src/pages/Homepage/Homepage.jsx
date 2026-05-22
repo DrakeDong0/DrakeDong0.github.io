@@ -39,7 +39,6 @@ import img21 from '../../assets/gallery/img21.jpg'
 import img22 from '../../assets/gallery/img22.jpg'
 import img23 from '../../assets/gallery/img23.jpg'
 import img24 from '../../assets/gallery/img24.jpg'
-import img25 from '../../assets/gallery/img25.jpg'
 
 function HomeContent() {
   const navigate = useNavigate();
@@ -190,16 +189,10 @@ function HomeContent() {
               <div className="options-item">Travels</div><div className="options-item">→</div>
             </button>
 
-            <button onClick={() => {
-              const element = document.getElementById('extras-container');
-              const topPosition = element.getBoundingClientRect().top;
-              window.scrollBy({
-                top: topPosition - 10,
-                behavior: 'smooth'
-              });
-            }} className="options-container">
-              <div className="options-item">Extras</div><div className="options-item">→</div>
+            <button className="options-container" onClick={() => navigate('/Photography')}>
+              <div className="options-item">Photography</div><div className="options-item">→</div>
             </button>
+
           </div>
         </div>
       </LazyLoad>
@@ -264,7 +257,6 @@ function Extras() {
           <div><img className="gallery-img" src={img12}></img></div>
           <div><img className="gallery-img" src={img16}></img></div>
           <div><img className="gallery-img" src={img20}></img></div>
-          <div><img className="gallery-img" src={img25}></img></div>
         </div>
       </div>
 

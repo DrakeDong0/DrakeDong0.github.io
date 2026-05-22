@@ -17,6 +17,7 @@ export default function Header() {
                 <button className="header-text underline" onClick={AboutClick}>About Me</button>
                 <button className="header-text underline" onClick={() => navigate('/Projects')}>Projects</button>
                 <button className="header-text underline" onClick={() => navigate('/Work')}>Work</button>
+                <button className="header-text underline" onClick={() => navigate('/Photography')}>Photography</button>
             </div>
             <div className="invisblock"></div>
         </header>

@@ -34,8 +34,8 @@ function WorkContent() {
                 <a target="_blank" href="https://www.portainer.io/"><img className="tech-img" alt="Portainer icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original.svg" /></a>
                 <a target="_blank" href="https://vuejs.org/"><img className="tech-img" alt="Vue icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" /></a>
                 <a target="_blank" href="https://kubernetes.io/"><img className="tech-img" alt="K8 icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" /></a>
-                <a target="_blank" href="https://kafka.apache.org/"><img className="tech-img" alt="Kafka icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" /></a>
-                <a target="_blank" href="https://redis.io/"><img className="tech-img" alt="Redis icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" /></a>
+                <a target="_blank" href="https://kafka.apache.org/"><img className="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aarch64/aarch64-original.svg"/></a>
+                <a target="_blank" href="https://redis.io/"><img className="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"/></a>
             </div>
             <div className="work-exp-container">
                 <WorkExperience
