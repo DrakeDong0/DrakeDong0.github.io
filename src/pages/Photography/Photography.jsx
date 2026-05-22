@@ -204,6 +204,8 @@ function Shot({ photo, index, orientation, onClick }) {
         <img
           src={photo.src}
           alt={photo.place}
+          loading="lazy"
+          decoding="async"
           onLoad={() => setLoaded(true)}
           style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.4s ease' }}
         />

@@ -162,6 +162,13 @@
   gap: 96px;
 }
 
+.pg-row--landscape,
+.pg-row--portraits,
+.pg-row--squares {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}
+
 .pg-row--portraits,
 .pg-row--squares {
   display: grid;
