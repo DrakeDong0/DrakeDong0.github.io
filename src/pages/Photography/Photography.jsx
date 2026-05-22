@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import { useParams, useNavigate, Navigate } from 'react-router-dom';
 import './Photography.css';
 import '../../Components/style.css';
 import Header from '../../Components/Header/Header';
@@ -103,7 +104,7 @@ const TABS = [
     id: 'extras',
     label: 'Extras',
     span: '2026',
-    rolls: 'Fuji XT-30 III',
+    rolls: 'Fuji XT-30 III 70-200mm f/2.8, 23mm f/2.8',
     rows: [
       { type: 'landscape', photos: [
         { id: 'ex01', src: imgExtras001, place: 'Port Elgin, Ontario', when: 'May 20, 2026' },
@@ -222,10 +223,14 @@ function Shot({ photo, index, orientation, onClick }) {
 // ─── Main page ───────────────────────────────────────────────────────────────
 
 export default function Photography() {
-  const [activeTabId, setActiveTabId] = useState('portugal');
+  const { gallery } = useParams();
+  const navigate = useNavigate();
   const [lightboxIndex, setLightboxIndex] = useState(-1);
 
-  const activeTab = useMemo(() => TABS.find(t => t.id === activeTabId), [activeTabId]);
+  const activeTab = useMemo(() => TABS.find(t => t.id === gallery), [gallery]);
+
+  if (!gallery) return <Navigate to="/Photography/portugal" replace />;
+  if (!activeTab) return <Navigate to="/Photography/portugal" replace />;
 
   const flatPhotos = useMemo(() =>
     activeTab?.rows?.flatMap(row =>
@@ -257,13 +262,11 @@ export default function Photography() {
             <button
               key={tab.id}
               role="tab"
-              aria-selected={tab.id === activeTabId && !tab.disabled}
-              className={`pg-tab${tab.id === activeTabId && !tab.disabled ? ' pg-tab--active' : ''}${tab.disabled ? ' pg-tab--disabled' : ''}`}
-              onClick={() => !tab.disabled && setActiveTabId(tab.id)}
-              disabled={tab.disabled}
+              aria-selected={tab.id === gallery}
+              className={`pg-tab${tab.id === gallery ? ' pg-tab--active' : ''}`}
+              onClick={() => { setLightboxIndex(-1); navigate(`/Photography/${tab.id}`); }}
             >
               {tab.label}
-              {tab.disabled && <span className="pg-tab-soon">soon</span>}
             </button>
           ))}
         </div>

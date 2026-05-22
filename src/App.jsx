@@ -18,6 +18,7 @@ export default function App() {
         <Route path='/Work' element={<Work />}></Route>
         <Route path='/Travel' element={<TravelPage />}></Route>
         <Route path='/Photography' element={<Photography />}></Route>
+        <Route path='/Photography/:gallery' element={<Photography />}></Route>
       </Routes>
     </BrowserRouter>
   );
