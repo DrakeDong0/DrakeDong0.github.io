@@ -227,6 +227,8 @@ export default function Photography() {
   const navigate = useNavigate();
   const [lightboxIndex, setLightboxIndex] = useState(-1);
 
+  useEffect(() => { setLightboxIndex(-1); }, [gallery]);
+
   const activeTab = useMemo(() => TABS.find(t => t.id === gallery), [gallery]);
 
   const flatPhotos = useMemo(() =>
@@ -296,6 +298,7 @@ export default function Photography() {
             return (
               <div key={ri} className="pg-row pg-row--landscape">
                 <Shot
+                  key={row.photos[0].id}
                   photo={row.photos[0]}
                   index={flatIndexMap[row.photos[0].id]}
                   orientation="landscape"
