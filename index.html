@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drake Dong</title>
     <link rel="icon" href="./public/favicon.png" type="image/png">
+    <script>
+      (function () {
+        var r = new URLSearchParams(window.location.search).get('r');
+        if (r) {
+          window.history.replaceState(null, '', r);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
