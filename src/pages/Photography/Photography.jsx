@@ -35,7 +35,7 @@ const TABS = [
     id: 'portugal',
     label: 'Portugal',
     span: 'May 2026',
-    rolls: 'Fuji XT-30 III 70-200mm f/2.8, 23mm f/2.8',
+    rolls: 'Fuji XT-30 III 70-300mm f/4-5.6, 23mm f/2.8',
     rows: [
       { type: 'landscape', photos: [
         { id: 'p07', src: imgRocaCoast,    place: 'Sines',               when: 'Apr 27, 2026' },
@@ -86,7 +86,7 @@ const TABS = [
     id: 'people',
     label: 'People',
     span: '2026',
-    rolls: 'Fuji XT-30 III 70-200mm f/2.8, 23mm f/2.8',
+    rolls: 'Fuji XT-30 III 70-300mm f/4-5.6, 23mm f/2.8',
     rows: [
       { type: 'landscape', photos: [
         { id: 'pp01', src: imgMusicians,  place: 'Miradouro das Portas do Sol, Lisbon', when: 'Apr 28, 2026' },
@@ -104,7 +104,7 @@ const TABS = [
     id: 'extras',
     label: 'Extras',
     span: '2026',
-    rolls: 'Fuji XT-30 III 70-200mm f/2.8, 23mm f/2.8',
+    rolls: 'Fuji XT-30 III 70-300mm f/4-5.6, 23mm f/2.8',
     rows: [
       { type: 'landscape', photos: [
         { id: 'ex01', src: imgExtras001, place: 'Port Elgin, Ontario', when: 'May 20, 2026' },
