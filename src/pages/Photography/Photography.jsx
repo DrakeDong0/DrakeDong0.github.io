@@ -6,19 +6,16 @@ import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 
 import imgPortoMoto      from '../../assets/photography/portugal/porto_moto.jpg';
-import imgPinwheel       from '../../assets/photography/portugal/pinwheel.jpg';
 import imgLisbonYellow   from '../../assets/photography/portugal/lisbon_yellow.jpg';
 import imgCascaisArch    from '../../assets/photography/portugal/cascais_arch.jpg';
 import imgSintraDaisy    from '../../assets/photography/portugal/sintra_daisy.jpg';
 import imgRocaCoast      from '../../assets/photography/portugal/roca_coast.jpg';
-import imgOrangeTree     from '../../assets/photography/portugal/orange_tree.jpg';
 import imgSeaArch        from '../../assets/photography/portugal/sea_arch.jpg';
 import imgAlgarveCliff   from '../../assets/photography/portugal/algarve_cliff.jpg';
 import imgPiedadeFlower  from '../../assets/photography/portugal/piedade_flower.jpg';
 import imgPineapple      from '../../assets/photography/portugal/pineapple.jpg';
 import imgSeaStack       from '../../assets/photography/portugal/sea_stack.jpg';
 import imgMadeiraPools   from '../../assets/photography/portugal/madeira_pools.jpg';
-import imgMadeiraLevada  from '../../assets/photography/portugal/madeira_levada.jpg';
 import imgLighthouse     from '../../assets/photography/portugal/lighthouse_window.jpg';
 import imgRedLamp        from '../../assets/photography/portugal/red_lamp.jpg';
 import imgPt002          from '../../assets/photography/portugal/pt_002.jpg';
@@ -42,7 +39,7 @@ const TABS = [
       ]},
       { type: 'portraits', photos: [
         { id: 'p02', src: imgPortoMoto,   place: 'Porto',                               when: 'Apr 28, 2026' },
-        { id: 'p03', src: imgPinwheel,    place: 'Alfama, Lisbon',                 when: 'Apr 28, 2026' },
+        { id: 'p03', src: imgAlgarveCliff,    place: 'Cabo Da Roca, Sintra',                 when: 'Apr 28, 2026' },
       ]},
       { type: 'landscape', photos: [
         { id: 'p04', src: imgLisbonYellow, place: 'Baixa de Lisboa, Lisbon',          when: 'Apr 28, 2026' },
@@ -50,10 +47,6 @@ const TABS = [
       { type: 'square', photos: [
         { id: 'p05', src: imgCascaisArch,  place: 'Praia Grande Beach, Sintra',                            when: 'Apr 27, 2026' },
         { id: 'p06', src: imgSintraDaisy,  place: 'Sintra',                             when: 'Apr 27, 2026' },
-      ]},
-      { type: 'portraits', photos: [
-        { id: 'p08', src: imgOrangeTree,   place: 'Algarve Coast',                              when: 'Apr 27, 2026' },
-        { id: 'p09', src: imgAlgarveCliff, place: 'Cabo Da Roca, Sintra',                      when: 'Apr 29, 2026' },
       ]},
       { type: 'landscape', photos: [
         { id: 'p12', src: imgRedLamp,      place: 'Quinta da regaleira, Sintra',                              when: 'Apr 27, 2026' },
@@ -70,9 +63,6 @@ const TABS = [
       ]},
       { type: 'landscape', photos: [
         { id: 'p14', src: imgPineapple,    place: 'Cabo Da Roca, Sintra',                when: 'Apr 29, 2026' },
-      ]},
-      { type: 'landscape', photos: [
-        { id: 'p17', src: imgMadeiraLevada,place: 'Peneda-Gerês National Park',           when: 'May 4, 2026' },
       ]},
       { type: 'landscape', photos: [
         { id: 'p15', src: imgLighthouse,   place: 'Castro de Santa Trega, A Guarda',     when: 'May 3, 2026' },
